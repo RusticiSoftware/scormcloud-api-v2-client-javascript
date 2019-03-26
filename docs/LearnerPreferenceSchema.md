@@ -6,6 +6,6 @@ Name | Type | Description | Notes
 **audioLevel** | **Number** |  | [optional] 
 **language** | **String** |  | [optional] 
 **deliverySpeed** | **Number** |  | [optional] 
-**audioCaptioning** | **Integer** |  | [optional] 
+**audioCaptioning** | **Number** |  | [optional] 
 
 

@@ -4,7 +4,7 @@
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
 **id** | **String** |  | [optional] 
-**instance** | **Integer** |  | [optional] 
+**instance** | **Number** |  | [optional] 
 **score** | [**ScoreSchema**](ScoreSchema.md) |  | [optional] 
 **completionStatus** | **String** |  | [optional] [default to &#39;UNKNOWN&#39;]
 **successStatus** | **String** |  | [optional] [default to &#39;UNKNOWN&#39;]

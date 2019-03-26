@@ -3,7 +3,7 @@
 ## Properties
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**expiry** | **Integer** | Number of seconds from now this link will expire in. Defaults to 120s. Range 10s:300s | [optional] [default to 120]
+**expiry** | **Number** | Number of seconds from now this link will expire in. Defaults to 120s. Range 10s:300s | [optional] [default to 120]
 **redirectOnExitUrl** | **String** | The URL the application should redirect to when the learner exits a course. If not specified, configured value will be used. | [optional] 
 **tracking** | **Boolean** | Should this launch be tracked? If false, Engine will avoid tracking to the extent possible for the standard being used. | [optional] [default to true]
 **startSco** | **String** | For SCORM, SCO identifier to override launch, overriding the normal sequencing. | [optional] 

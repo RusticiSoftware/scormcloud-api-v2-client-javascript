@@ -1,6 +1,6 @@
 # RusticiSoftwareCloudV2.PingApi
 
-All URIs are relative to *https://dev.cloud.scorm.com/api/v2/*
+All URIs are relative to *https://cloud.scorm.com/api/v2/*
 
 Method | HTTP request | Description
 ------------- | ------------- | -------------
@@ -16,7 +16,7 @@ Get back a message indicating that the API is working.
 ### Example
 ```javascript
 var RusticiSoftwareCloudV2 = require('rustici-software-cloud-v2');
-var defaultClient = RusticiSoftwareCloudV2.ApiClient.default;
+var defaultClient = RusticiSoftwareCloudV2.ApiClient.instance;
 
 // Configure HTTP basic authorization: APP_NORMAL
 var APP_NORMAL = defaultClient.authentications['APP_NORMAL'];

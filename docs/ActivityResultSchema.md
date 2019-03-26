@@ -5,7 +5,7 @@ Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
 **id** | **String** |  | [optional] 
 **title** | **String** |  | [optional] 
-**attempts** | **Integer** |  | [optional] 
+**attempts** | **Number** |  | [optional] 
 **activityCompletion** | **String** |  | [optional] 
 **activitySuccess** | **String** |  | [optional] 
 **score** | [**ScoreSchema**](ScoreSchema.md) |  | [optional] 

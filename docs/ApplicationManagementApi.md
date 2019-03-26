@@ -1,6 +1,6 @@
 # RusticiSoftwareCloudV2.ApplicationManagementApi
 
-All URIs are relative to *https://dev.cloud.scorm.com/api/v2/*
+All URIs are relative to *https://cloud.scorm.com/api/v2/*
 
 Method | HTTP request | Description
 ------------- | ------------- | -------------
@@ -25,7 +25,7 @@ Create a new application
 ### Example
 ```javascript
 var RusticiSoftwareCloudV2 = require('rustici-software-cloud-v2');
-var defaultClient = RusticiSoftwareCloudV2.ApiClient.default;
+var defaultClient = RusticiSoftwareCloudV2.ApiClient.instance;
 
 // Configure HTTP basic authorization: APP_NORMAL
 var APP_NORMAL = defaultClient.authentications['APP_NORMAL'];
@@ -79,7 +79,7 @@ Create credential
 ### Example
 ```javascript
 var RusticiSoftwareCloudV2 = require('rustici-software-cloud-v2');
-var defaultClient = RusticiSoftwareCloudV2.ApiClient.default;
+var defaultClient = RusticiSoftwareCloudV2.ApiClient.instance;
 
 // Configure HTTP basic authorization: APP_NORMAL
 var APP_NORMAL = defaultClient.authentications['APP_NORMAL'];
@@ -138,7 +138,7 @@ Creates, signs and returns a token based on the provided permissions, if the cre
 ### Example
 ```javascript
 var RusticiSoftwareCloudV2 = require('rustici-software-cloud-v2');
-var defaultClient = RusticiSoftwareCloudV2.ApiClient.default;
+var defaultClient = RusticiSoftwareCloudV2.ApiClient.instance;
 
 // Configure HTTP basic authorization: APP_NORMAL
 var APP_NORMAL = defaultClient.authentications['APP_NORMAL'];
@@ -188,7 +188,7 @@ Delete an application.  If the application contains content, it must first be ma
 ### Example
 ```javascript
 var RusticiSoftwareCloudV2 = require('rustici-software-cloud-v2');
-var defaultClient = RusticiSoftwareCloudV2.ApiClient.default;
+var defaultClient = RusticiSoftwareCloudV2.ApiClient.instance;
 
 // Configure HTTP basic authorization: APP_NORMAL
 var APP_NORMAL = defaultClient.authentications['APP_NORMAL'];
@@ -242,7 +242,7 @@ Removes &#x60;credentialId&#x60; credentials
 ### Example
 ```javascript
 var RusticiSoftwareCloudV2 = require('rustici-software-cloud-v2');
-var defaultClient = RusticiSoftwareCloudV2.ApiClient.default;
+var defaultClient = RusticiSoftwareCloudV2.ApiClient.instance;
 
 // Configure HTTP basic authorization: APP_NORMAL
 var APP_NORMAL = defaultClient.authentications['APP_NORMAL'];
@@ -299,7 +299,7 @@ Returns all configuration settings for this level
 ### Example
 ```javascript
 var RusticiSoftwareCloudV2 = require('rustici-software-cloud-v2');
-var defaultClient = RusticiSoftwareCloudV2.ApiClient.default;
+var defaultClient = RusticiSoftwareCloudV2.ApiClient.instance;
 
 // Configure HTTP basic authorization: APP_NORMAL
 var APP_NORMAL = defaultClient.authentications['APP_NORMAL'];
@@ -358,7 +358,7 @@ Get list of all applications in this realm.
 ### Example
 ```javascript
 var RusticiSoftwareCloudV2 = require('rustici-software-cloud-v2');
-var defaultClient = RusticiSoftwareCloudV2.ApiClient.default;
+var defaultClient = RusticiSoftwareCloudV2.ApiClient.instance;
 
 // Configure HTTP basic authorization: APP_NORMAL
 var APP_NORMAL = defaultClient.authentications['APP_NORMAL'];
@@ -406,7 +406,7 @@ List of credentials
 ### Example
 ```javascript
 var RusticiSoftwareCloudV2 = require('rustici-software-cloud-v2');
-var defaultClient = RusticiSoftwareCloudV2.ApiClient.default;
+var defaultClient = RusticiSoftwareCloudV2.ApiClient.instance;
 
 // Configure HTTP basic authorization: APP_NORMAL
 var APP_NORMAL = defaultClient.authentications['APP_NORMAL'];
@@ -460,7 +460,7 @@ Set configuration settings for this level.
 ### Example
 ```javascript
 var RusticiSoftwareCloudV2 = require('rustici-software-cloud-v2');
-var defaultClient = RusticiSoftwareCloudV2.ApiClient.default;
+var defaultClient = RusticiSoftwareCloudV2.ApiClient.instance;
 
 // Configure HTTP basic authorization: APP_NORMAL
 var APP_NORMAL = defaultClient.authentications['APP_NORMAL'];
@@ -520,7 +520,7 @@ Update the name or status associated with &#x60;credentialId&#x60;
 ### Example
 ```javascript
 var RusticiSoftwareCloudV2 = require('rustici-software-cloud-v2');
-var defaultClient = RusticiSoftwareCloudV2.ApiClient.default;
+var defaultClient = RusticiSoftwareCloudV2.ApiClient.instance;
 
 // Configure HTTP basic authorization: APP_NORMAL
 var APP_NORMAL = defaultClient.authentications['APP_NORMAL'];

@@ -1,6 +1,6 @@
 # RusticiSoftwareCloudV2.AuthenticationApi
 
-All URIs are relative to *https://dev.cloud.scorm.com/api/v2/*
+All URIs are relative to *https://cloud.scorm.com/api/v2/*
 
 Method | HTTP request | Description
 ------------- | ------------- | -------------
@@ -16,7 +16,7 @@ Authenticates for a oauth token
 ### Example
 ```javascript
 var RusticiSoftwareCloudV2 = require('rustici-software-cloud-v2');
-var defaultClient = RusticiSoftwareCloudV2.ApiClient.default;
+var defaultClient = RusticiSoftwareCloudV2.ApiClient.instance;
 
 // Configure HTTP basic authorization: APP_NORMAL
 var APP_NORMAL = defaultClient.authentications['APP_NORMAL'];
@@ -28,7 +28,7 @@ var apiInstance = new RusticiSoftwareCloudV2.AuthenticationApi();
 var scope = "scope_example"; // String | 
 
 var opts = { 
-  'expiration': 300 // Integer | 
+  'expiration': 300 // Number | 
 };
 
 var callback = function(error, data, response) {
@@ -46,7 +46,7 @@ apiInstance.getAppToken(scope, opts, callback);
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **scope** | **String**|  | 
- **expiration** | **Integer**|  | [optional] [default to 300]
+ **expiration** | **Number**|  | [optional] [default to 300]
 
 ### Return type
 

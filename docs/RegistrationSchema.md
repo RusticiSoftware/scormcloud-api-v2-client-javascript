@@ -4,7 +4,7 @@
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
 **id** | **String** |  | [optional] 
-**instance** | **Integer** |  | [optional] 
+**instance** | **Number** |  | [optional] 
 **xapiRegistrationId** | **String** | xAPI registration id associated with this registration | [optional] 
 **dispatchId** | **String** | Dispatch ID for this registration, if applicable | [optional] 
 **updated** | **Date** |  | [optional] 
