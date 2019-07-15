@@ -9,32 +9,21 @@
  * https://github.com/swagger-api/swagger-codegen.git
  * Do not edit the class manually.
  *
- * Licensed under the Apache License, Version 2.0 (the "License");
- * you may not use this file except in compliance with the License.
- * You may obtain a copy of the License at
- *
- * http://www.apache.org/licenses/LICENSE-2.0
- *
- * Unless required by applicable law or agreed to in writing, software
- * distributed under the License is distributed on an "AS IS" BASIS,
- * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
- * See the License for the specific language governing permissions and
- * limitations under the License.
  */
 
 (function(factory) {
   if (typeof define === 'function' && define.amd) {
     // AMD. Register as an anonymous module.
-    define(['rustici-software-cloud-v2/ApiClient', 'rustici-software-cloud-v2/rustici-software-cloud-v2-model/ActivityResultSchema', 'rustici-software-cloud-v2/rustici-software-cloud-v2-model/ApplicationListSchema', 'rustici-software-cloud-v2/rustici-software-cloud-v2-model/ApplicationSchema', 'rustici-software-cloud-v2/rustici-software-cloud-v2-model/ApplicationToken', 'rustici-software-cloud-v2/rustici-software-cloud-v2-model/CommentSchema', 'rustici-software-cloud-v2/rustici-software-cloud-v2-model/CompletionAmountSchema', 'rustici-software-cloud-v2/rustici-software-cloud-v2-model/CourseActivitySchema', 'rustici-software-cloud-v2/rustici-software-cloud-v2-model/CourseListNonPagedSchema', 'rustici-software-cloud-v2/rustici-software-cloud-v2-model/CourseListSchema', 'rustici-software-cloud-v2/rustici-software-cloud-v2-model/CourseReferenceSchema', 'rustici-software-cloud-v2/rustici-software-cloud-v2-model/CourseSchema', 'rustici-software-cloud-v2/rustici-software-cloud-v2-model/CreateRegistrationSchema', 'rustici-software-cloud-v2/rustici-software-cloud-v2-model/CredentialCreatedSchema', 'rustici-software-cloud-v2/rustici-software-cloud-v2-model/CredentialListSchema', 'rustici-software-cloud-v2/rustici-software-cloud-v2-model/CredentialRequestSchema', 'rustici-software-cloud-v2/rustici-software-cloud-v2-model/CredentialSchema', 'rustici-software-cloud-v2/rustici-software-cloud-v2-model/ImportFetchRequestSchema', 'rustici-software-cloud-v2/rustici-software-cloud-v2-model/ImportJobResultSchema', 'rustici-software-cloud-v2/rustici-software-cloud-v2-model/ImportResultSchema', 'rustici-software-cloud-v2/rustici-software-cloud-v2-model/IntegerResultSchema', 'rustici-software-cloud-v2/rustici-software-cloud-v2-model/ItemValuePairSchema', 'rustici-software-cloud-v2/rustici-software-cloud-v2-model/LaunchHistoryListSchema', 'rustici-software-cloud-v2/rustici-software-cloud-v2-model/LaunchHistorySchema', 'rustici-software-cloud-v2/rustici-software-cloud-v2-model/LaunchLinkRequestSchema', 'rustici-software-cloud-v2/rustici-software-cloud-v2-model/LaunchLinkSchema', 'rustici-software-cloud-v2/rustici-software-cloud-v2-model/LearnerPreferenceSchema', 'rustici-software-cloud-v2/rustici-software-cloud-v2-model/LearnerSchema', 'rustici-software-cloud-v2/rustici-software-cloud-v2-model/LinkSchema', 'rustici-software-cloud-v2/rustici-software-cloud-v2-model/MessageSchema', 'rustici-software-cloud-v2/rustici-software-cloud-v2-model/MetadataSchema', 'rustici-software-cloud-v2/rustici-software-cloud-v2-model/ObjectiveSchema', 'rustici-software-cloud-v2/rustici-software-cloud-v2-model/PermissionsSchema', 'rustici-software-cloud-v2/rustici-software-cloud-v2-model/PingSchema', 'rustici-software-cloud-v2/rustici-software-cloud-v2-model/PostBackSchema', 'rustici-software-cloud-v2/rustici-software-cloud-v2-model/RegistrationCompletion', 'rustici-software-cloud-v2/rustici-software-cloud-v2-model/RegistrationListSchema', 'rustici-software-cloud-v2/rustici-software-cloud-v2-model/RegistrationSchema', 'rustici-software-cloud-v2/rustici-software-cloud-v2-model/RegistrationSuccess', 'rustici-software-cloud-v2/rustici-software-cloud-v2-model/ResponseError', 'rustici-software-cloud-v2/rustici-software-cloud-v2-model/RuntimeInteractionSchema', 'rustici-software-cloud-v2/rustici-software-cloud-v2-model/RuntimeObjectiveSchema', 'rustici-software-cloud-v2/rustici-software-cloud-v2-model/RuntimeSchema', 'rustici-software-cloud-v2/rustici-software-cloud-v2-model/ScoreSchema', 'rustici-software-cloud-v2/rustici-software-cloud-v2-model/SettingItem', 'rustici-software-cloud-v2/rustici-software-cloud-v2-model/SettingListSchema', 'rustici-software-cloud-v2/rustici-software-cloud-v2-model/SettingMetadata', 'rustici-software-cloud-v2/rustici-software-cloud-v2-model/SettingMetadataValidValues', 'rustici-software-cloud-v2/rustici-software-cloud-v2-model/SettingsIndividualSchema', 'rustici-software-cloud-v2/rustici-software-cloud-v2-model/SettingsPostSchema', 'rustici-software-cloud-v2/rustici-software-cloud-v2-model/SharedDataEntrySchema', 'rustici-software-cloud-v2/rustici-software-cloud-v2-model/StaticPropertiesSchema', 'rustici-software-cloud-v2/rustici-software-cloud-v2-model/StringResultSchema', 'rustici-software-cloud-v2/rustici-software-cloud-v2-model/TitleSchema', 'rustici-software-cloud-v2/rustici-software-cloud-v2-model/TokenRequestSchema', 'rustici-software-cloud-v2/rustici-software-cloud-v2-api/ApplicationManagementApi', 'rustici-software-cloud-v2/rustici-software-cloud-v2-api/AuthenticationApi', 'rustici-software-cloud-v2/rustici-software-cloud-v2-api/CourseApi', 'rustici-software-cloud-v2/rustici-software-cloud-v2-api/PingApi', 'rustici-software-cloud-v2/rustici-software-cloud-v2-api/RegistrationApi'], factory);
+    define(['rustici-software-cloud-v2/ApiClient', 'rustici-software-cloud-v2/rustici-software-cloud-v2-model/ActivityResultSchema', 'rustici-software-cloud-v2/rustici-software-cloud-v2-model/ApplicationListSchema', 'rustici-software-cloud-v2/rustici-software-cloud-v2-model/ApplicationSchema', 'rustici-software-cloud-v2/rustici-software-cloud-v2-model/ApplicationToken', 'rustici-software-cloud-v2/rustici-software-cloud-v2-model/BatchTagsSchema', 'rustici-software-cloud-v2/rustici-software-cloud-v2-model/CommentSchema', 'rustici-software-cloud-v2/rustici-software-cloud-v2-model/CompletionAmountSchema', 'rustici-software-cloud-v2/rustici-software-cloud-v2-model/CourseActivitySchema', 'rustici-software-cloud-v2/rustici-software-cloud-v2-model/CourseListNonPagedSchema', 'rustici-software-cloud-v2/rustici-software-cloud-v2-model/CourseListSchema', 'rustici-software-cloud-v2/rustici-software-cloud-v2-model/CourseReferenceSchema', 'rustici-software-cloud-v2/rustici-software-cloud-v2-model/CourseSchema', 'rustici-software-cloud-v2/rustici-software-cloud-v2-model/CreateRegistrationSchema', 'rustici-software-cloud-v2/rustici-software-cloud-v2-model/CredentialCreatedSchema', 'rustici-software-cloud-v2/rustici-software-cloud-v2-model/CredentialListSchema', 'rustici-software-cloud-v2/rustici-software-cloud-v2-model/CredentialRequestSchema', 'rustici-software-cloud-v2/rustici-software-cloud-v2-model/CredentialSchema', 'rustici-software-cloud-v2/rustici-software-cloud-v2-model/ImportFetchRequestSchema', 'rustici-software-cloud-v2/rustici-software-cloud-v2-model/ImportJobResultSchema', 'rustici-software-cloud-v2/rustici-software-cloud-v2-model/ImportResultSchema', 'rustici-software-cloud-v2/rustici-software-cloud-v2-model/ItemValuePairSchema', 'rustici-software-cloud-v2/rustici-software-cloud-v2-model/LaunchHistoryListSchema', 'rustici-software-cloud-v2/rustici-software-cloud-v2-model/LaunchHistorySchema', 'rustici-software-cloud-v2/rustici-software-cloud-v2-model/LaunchLinkRequestSchema', 'rustici-software-cloud-v2/rustici-software-cloud-v2-model/LaunchLinkSchema', 'rustici-software-cloud-v2/rustici-software-cloud-v2-model/LearnerPreferenceSchema', 'rustici-software-cloud-v2/rustici-software-cloud-v2-model/LearnerSchema', 'rustici-software-cloud-v2/rustici-software-cloud-v2-model/MessageSchema', 'rustici-software-cloud-v2/rustici-software-cloud-v2-model/MetadataSchema', 'rustici-software-cloud-v2/rustici-software-cloud-v2-model/ObjectiveSchema', 'rustici-software-cloud-v2/rustici-software-cloud-v2-model/PermissionsSchema', 'rustici-software-cloud-v2/rustici-software-cloud-v2-model/PingSchema', 'rustici-software-cloud-v2/rustici-software-cloud-v2-model/PostBackSchema', 'rustici-software-cloud-v2/rustici-software-cloud-v2-model/RegistrationCompletion', 'rustici-software-cloud-v2/rustici-software-cloud-v2-model/RegistrationListSchema', 'rustici-software-cloud-v2/rustici-software-cloud-v2-model/RegistrationSchema', 'rustici-software-cloud-v2/rustici-software-cloud-v2-model/RegistrationSuccess', 'rustici-software-cloud-v2/rustici-software-cloud-v2-model/ResponseError', 'rustici-software-cloud-v2/rustici-software-cloud-v2-model/RuntimeInteractionSchema', 'rustici-software-cloud-v2/rustici-software-cloud-v2-model/RuntimeObjectiveSchema', 'rustici-software-cloud-v2/rustici-software-cloud-v2-model/RuntimeSchema', 'rustici-software-cloud-v2/rustici-software-cloud-v2-model/ScoreSchema', 'rustici-software-cloud-v2/rustici-software-cloud-v2-model/SettingItem', 'rustici-software-cloud-v2/rustici-software-cloud-v2-model/SettingListSchema', 'rustici-software-cloud-v2/rustici-software-cloud-v2-model/SettingMetadata', 'rustici-software-cloud-v2/rustici-software-cloud-v2-model/SettingValidValue', 'rustici-software-cloud-v2/rustici-software-cloud-v2-model/SettingsIndividualSchema', 'rustici-software-cloud-v2/rustici-software-cloud-v2-model/SettingsPostSchema', 'rustici-software-cloud-v2/rustici-software-cloud-v2-model/SharedDataEntrySchema', 'rustici-software-cloud-v2/rustici-software-cloud-v2-model/StaticPropertiesSchema', 'rustici-software-cloud-v2/rustici-software-cloud-v2-model/StringResultSchema', 'rustici-software-cloud-v2/rustici-software-cloud-v2-model/TagListSchema', 'rustici-software-cloud-v2/rustici-software-cloud-v2-model/TitleSchema', 'rustici-software-cloud-v2/rustici-software-cloud-v2-model/TokenRequestSchema', 'rustici-software-cloud-v2/rustici-software-cloud-v2-model/XapiAccount', 'rustici-software-cloud-v2/rustici-software-cloud-v2-model/XapiActivity', 'rustici-software-cloud-v2/rustici-software-cloud-v2-model/XapiActivityDefinition', 'rustici-software-cloud-v2/rustici-software-cloud-v2-model/XapiAgentGroup', 'rustici-software-cloud-v2/rustici-software-cloud-v2-model/XapiAttachment', 'rustici-software-cloud-v2/rustici-software-cloud-v2-model/XapiContext', 'rustici-software-cloud-v2/rustici-software-cloud-v2-model/XapiContextActivity', 'rustici-software-cloud-v2/rustici-software-cloud-v2-model/XapiInteractionComponent', 'rustici-software-cloud-v2/rustici-software-cloud-v2-model/XapiResult', 'rustici-software-cloud-v2/rustici-software-cloud-v2-model/XapiScore', 'rustici-software-cloud-v2/rustici-software-cloud-v2-model/XapiStatement', 'rustici-software-cloud-v2/rustici-software-cloud-v2-model/XapiStatementReference', 'rustici-software-cloud-v2/rustici-software-cloud-v2-model/XapiStatementResult', 'rustici-software-cloud-v2/rustici-software-cloud-v2-model/XapiVerb', 'rustici-software-cloud-v2/rustici-software-cloud-v2-api/ApplicationManagementApi', 'rustici-software-cloud-v2/rustici-software-cloud-v2-api/AuthenticationApi', 'rustici-software-cloud-v2/rustici-software-cloud-v2-api/CourseApi', 'rustici-software-cloud-v2/rustici-software-cloud-v2-api/PingApi', 'rustici-software-cloud-v2/rustici-software-cloud-v2-api/RegistrationApi'], factory);
   } else if (typeof module === 'object' && module.exports) {
     // CommonJS-like environments that support module.exports, like Node.
-    module.exports = factory(require('./ApiClient'), require('./rustici-software-cloud-v2-model/ActivityResultSchema'), require('./rustici-software-cloud-v2-model/ApplicationListSchema'), require('./rustici-software-cloud-v2-model/ApplicationSchema'), require('./rustici-software-cloud-v2-model/ApplicationToken'), require('./rustici-software-cloud-v2-model/CommentSchema'), require('./rustici-software-cloud-v2-model/CompletionAmountSchema'), require('./rustici-software-cloud-v2-model/CourseActivitySchema'), require('./rustici-software-cloud-v2-model/CourseListNonPagedSchema'), require('./rustici-software-cloud-v2-model/CourseListSchema'), require('./rustici-software-cloud-v2-model/CourseReferenceSchema'), require('./rustici-software-cloud-v2-model/CourseSchema'), require('./rustici-software-cloud-v2-model/CreateRegistrationSchema'), require('./rustici-software-cloud-v2-model/CredentialCreatedSchema'), require('./rustici-software-cloud-v2-model/CredentialListSchema'), require('./rustici-software-cloud-v2-model/CredentialRequestSchema'), require('./rustici-software-cloud-v2-model/CredentialSchema'), require('./rustici-software-cloud-v2-model/ImportFetchRequestSchema'), require('./rustici-software-cloud-v2-model/ImportJobResultSchema'), require('./rustici-software-cloud-v2-model/ImportResultSchema'), require('./rustici-software-cloud-v2-model/IntegerResultSchema'), require('./rustici-software-cloud-v2-model/ItemValuePairSchema'), require('./rustici-software-cloud-v2-model/LaunchHistoryListSchema'), require('./rustici-software-cloud-v2-model/LaunchHistorySchema'), require('./rustici-software-cloud-v2-model/LaunchLinkRequestSchema'), require('./rustici-software-cloud-v2-model/LaunchLinkSchema'), require('./rustici-software-cloud-v2-model/LearnerPreferenceSchema'), require('./rustici-software-cloud-v2-model/LearnerSchema'), require('./rustici-software-cloud-v2-model/LinkSchema'), require('./rustici-software-cloud-v2-model/MessageSchema'), require('./rustici-software-cloud-v2-model/MetadataSchema'), require('./rustici-software-cloud-v2-model/ObjectiveSchema'), require('./rustici-software-cloud-v2-model/PermissionsSchema'), require('./rustici-software-cloud-v2-model/PingSchema'), require('./rustici-software-cloud-v2-model/PostBackSchema'), require('./rustici-software-cloud-v2-model/RegistrationCompletion'), require('./rustici-software-cloud-v2-model/RegistrationListSchema'), require('./rustici-software-cloud-v2-model/RegistrationSchema'), require('./rustici-software-cloud-v2-model/RegistrationSuccess'), require('./rustici-software-cloud-v2-model/ResponseError'), require('./rustici-software-cloud-v2-model/RuntimeInteractionSchema'), require('./rustici-software-cloud-v2-model/RuntimeObjectiveSchema'), require('./rustici-software-cloud-v2-model/RuntimeSchema'), require('./rustici-software-cloud-v2-model/ScoreSchema'), require('./rustici-software-cloud-v2-model/SettingItem'), require('./rustici-software-cloud-v2-model/SettingListSchema'), require('./rustici-software-cloud-v2-model/SettingMetadata'), require('./rustici-software-cloud-v2-model/SettingMetadataValidValues'), require('./rustici-software-cloud-v2-model/SettingsIndividualSchema'), require('./rustici-software-cloud-v2-model/SettingsPostSchema'), require('./rustici-software-cloud-v2-model/SharedDataEntrySchema'), require('./rustici-software-cloud-v2-model/StaticPropertiesSchema'), require('./rustici-software-cloud-v2-model/StringResultSchema'), require('./rustici-software-cloud-v2-model/TitleSchema'), require('./rustici-software-cloud-v2-model/TokenRequestSchema'), require('./rustici-software-cloud-v2-api/ApplicationManagementApi'), require('./rustici-software-cloud-v2-api/AuthenticationApi'), require('./rustici-software-cloud-v2-api/CourseApi'), require('./rustici-software-cloud-v2-api/PingApi'), require('./rustici-software-cloud-v2-api/RegistrationApi'));
+    module.exports = factory(require('./ApiClient'), require('./rustici-software-cloud-v2-model/ActivityResultSchema'), require('./rustici-software-cloud-v2-model/ApplicationListSchema'), require('./rustici-software-cloud-v2-model/ApplicationSchema'), require('./rustici-software-cloud-v2-model/ApplicationToken'), require('./rustici-software-cloud-v2-model/BatchTagsSchema'), require('./rustici-software-cloud-v2-model/CommentSchema'), require('./rustici-software-cloud-v2-model/CompletionAmountSchema'), require('./rustici-software-cloud-v2-model/CourseActivitySchema'), require('./rustici-software-cloud-v2-model/CourseListNonPagedSchema'), require('./rustici-software-cloud-v2-model/CourseListSchema'), require('./rustici-software-cloud-v2-model/CourseReferenceSchema'), require('./rustici-software-cloud-v2-model/CourseSchema'), require('./rustici-software-cloud-v2-model/CreateRegistrationSchema'), require('./rustici-software-cloud-v2-model/CredentialCreatedSchema'), require('./rustici-software-cloud-v2-model/CredentialListSchema'), require('./rustici-software-cloud-v2-model/CredentialRequestSchema'), require('./rustici-software-cloud-v2-model/CredentialSchema'), require('./rustici-software-cloud-v2-model/ImportFetchRequestSchema'), require('./rustici-software-cloud-v2-model/ImportJobResultSchema'), require('./rustici-software-cloud-v2-model/ImportResultSchema'), require('./rustici-software-cloud-v2-model/ItemValuePairSchema'), require('./rustici-software-cloud-v2-model/LaunchHistoryListSchema'), require('./rustici-software-cloud-v2-model/LaunchHistorySchema'), require('./rustici-software-cloud-v2-model/LaunchLinkRequestSchema'), require('./rustici-software-cloud-v2-model/LaunchLinkSchema'), require('./rustici-software-cloud-v2-model/LearnerPreferenceSchema'), require('./rustici-software-cloud-v2-model/LearnerSchema'), require('./rustici-software-cloud-v2-model/MessageSchema'), require('./rustici-software-cloud-v2-model/MetadataSchema'), require('./rustici-software-cloud-v2-model/ObjectiveSchema'), require('./rustici-software-cloud-v2-model/PermissionsSchema'), require('./rustici-software-cloud-v2-model/PingSchema'), require('./rustici-software-cloud-v2-model/PostBackSchema'), require('./rustici-software-cloud-v2-model/RegistrationCompletion'), require('./rustici-software-cloud-v2-model/RegistrationListSchema'), require('./rustici-software-cloud-v2-model/RegistrationSchema'), require('./rustici-software-cloud-v2-model/RegistrationSuccess'), require('./rustici-software-cloud-v2-model/ResponseError'), require('./rustici-software-cloud-v2-model/RuntimeInteractionSchema'), require('./rustici-software-cloud-v2-model/RuntimeObjectiveSchema'), require('./rustici-software-cloud-v2-model/RuntimeSchema'), require('./rustici-software-cloud-v2-model/ScoreSchema'), require('./rustici-software-cloud-v2-model/SettingItem'), require('./rustici-software-cloud-v2-model/SettingListSchema'), require('./rustici-software-cloud-v2-model/SettingMetadata'), require('./rustici-software-cloud-v2-model/SettingValidValue'), require('./rustici-software-cloud-v2-model/SettingsIndividualSchema'), require('./rustici-software-cloud-v2-model/SettingsPostSchema'), require('./rustici-software-cloud-v2-model/SharedDataEntrySchema'), require('./rustici-software-cloud-v2-model/StaticPropertiesSchema'), require('./rustici-software-cloud-v2-model/StringResultSchema'), require('./rustici-software-cloud-v2-model/TagListSchema'), require('./rustici-software-cloud-v2-model/TitleSchema'), require('./rustici-software-cloud-v2-model/TokenRequestSchema'), require('./rustici-software-cloud-v2-model/XapiAccount'), require('./rustici-software-cloud-v2-model/XapiActivity'), require('./rustici-software-cloud-v2-model/XapiActivityDefinition'), require('./rustici-software-cloud-v2-model/XapiAgentGroup'), require('./rustici-software-cloud-v2-model/XapiAttachment'), require('./rustici-software-cloud-v2-model/XapiContext'), require('./rustici-software-cloud-v2-model/XapiContextActivity'), require('./rustici-software-cloud-v2-model/XapiInteractionComponent'), require('./rustici-software-cloud-v2-model/XapiResult'), require('./rustici-software-cloud-v2-model/XapiScore'), require('./rustici-software-cloud-v2-model/XapiStatement'), require('./rustici-software-cloud-v2-model/XapiStatementReference'), require('./rustici-software-cloud-v2-model/XapiStatementResult'), require('./rustici-software-cloud-v2-model/XapiVerb'), require('./rustici-software-cloud-v2-api/ApplicationManagementApi'), require('./rustici-software-cloud-v2-api/AuthenticationApi'), require('./rustici-software-cloud-v2-api/CourseApi'), require('./rustici-software-cloud-v2-api/PingApi'), require('./rustici-software-cloud-v2-api/RegistrationApi'));
   }
-}(function(ApiClient, ActivityResultSchema, ApplicationListSchema, ApplicationSchema, ApplicationToken, CommentSchema, CompletionAmountSchema, CourseActivitySchema, CourseListNonPagedSchema, CourseListSchema, CourseReferenceSchema, CourseSchema, CreateRegistrationSchema, CredentialCreatedSchema, CredentialListSchema, CredentialRequestSchema, CredentialSchema, ImportFetchRequestSchema, ImportJobResultSchema, ImportResultSchema, IntegerResultSchema, ItemValuePairSchema, LaunchHistoryListSchema, LaunchHistorySchema, LaunchLinkRequestSchema, LaunchLinkSchema, LearnerPreferenceSchema, LearnerSchema, LinkSchema, MessageSchema, MetadataSchema, ObjectiveSchema, PermissionsSchema, PingSchema, PostBackSchema, RegistrationCompletion, RegistrationListSchema, RegistrationSchema, RegistrationSuccess, ResponseError, RuntimeInteractionSchema, RuntimeObjectiveSchema, RuntimeSchema, ScoreSchema, SettingItem, SettingListSchema, SettingMetadata, SettingMetadataValidValues, SettingsIndividualSchema, SettingsPostSchema, SharedDataEntrySchema, StaticPropertiesSchema, StringResultSchema, TitleSchema, TokenRequestSchema, ApplicationManagementApi, AuthenticationApi, CourseApi, PingApi, RegistrationApi) {
+}(function(ApiClient, ActivityResultSchema, ApplicationListSchema, ApplicationSchema, ApplicationToken, BatchTagsSchema, CommentSchema, CompletionAmountSchema, CourseActivitySchema, CourseListNonPagedSchema, CourseListSchema, CourseReferenceSchema, CourseSchema, CreateRegistrationSchema, CredentialCreatedSchema, CredentialListSchema, CredentialRequestSchema, CredentialSchema, ImportFetchRequestSchema, ImportJobResultSchema, ImportResultSchema, ItemValuePairSchema, LaunchHistoryListSchema, LaunchHistorySchema, LaunchLinkRequestSchema, LaunchLinkSchema, LearnerPreferenceSchema, LearnerSchema, MessageSchema, MetadataSchema, ObjectiveSchema, PermissionsSchema, PingSchema, PostBackSchema, RegistrationCompletion, RegistrationListSchema, RegistrationSchema, RegistrationSuccess, ResponseError, RuntimeInteractionSchema, RuntimeObjectiveSchema, RuntimeSchema, ScoreSchema, SettingItem, SettingListSchema, SettingMetadata, SettingValidValue, SettingsIndividualSchema, SettingsPostSchema, SharedDataEntrySchema, StaticPropertiesSchema, StringResultSchema, TagListSchema, TitleSchema, TokenRequestSchema, XapiAccount, XapiActivity, XapiActivityDefinition, XapiAgentGroup, XapiAttachment, XapiContext, XapiContextActivity, XapiInteractionComponent, XapiResult, XapiScore, XapiStatement, XapiStatementReference, XapiStatementResult, XapiVerb, ApplicationManagementApi, AuthenticationApi, CourseApi, PingApi, RegistrationApi) {
   'use strict';
 
   /**
-   * REST_API_used_for_SCORM_Cloud_integrations_.<br>
+   * Swagger Generated JavaScript Client for SCORM Cloud API v2.<br>
    * The <code>index</code> module provides access to constructors for all the classes which comprise the public API.
    * <p>
    * An AMD (recommended!) or CommonJS application will generally do something equivalent to the following:
@@ -62,7 +51,7 @@
    * </pre>
    * </p>
    * @module rustici-software-cloud-v2/index
-   * @version 2.0 beta
+   * @version 1.1.0-beta
    */
   var exports = {
     /**
@@ -90,6 +79,11 @@
      * @property {module:rustici-software-cloud-v2/rustici-software-cloud-v2-model/ApplicationToken}
      */
     ApplicationToken: ApplicationToken,
+    /**
+     * The BatchTagsSchema model constructor.
+     * @property {module:rustici-software-cloud-v2/rustici-software-cloud-v2-model/BatchTagsSchema}
+     */
+    BatchTagsSchema: BatchTagsSchema,
     /**
      * The CommentSchema model constructor.
      * @property {module:rustici-software-cloud-v2/rustici-software-cloud-v2-model/CommentSchema}
@@ -166,11 +160,6 @@
      */
     ImportResultSchema: ImportResultSchema,
     /**
-     * The IntegerResultSchema model constructor.
-     * @property {module:rustici-software-cloud-v2/rustici-software-cloud-v2-model/IntegerResultSchema}
-     */
-    IntegerResultSchema: IntegerResultSchema,
-    /**
      * The ItemValuePairSchema model constructor.
      * @property {module:rustici-software-cloud-v2/rustici-software-cloud-v2-model/ItemValuePairSchema}
      */
@@ -205,11 +194,6 @@
      * @property {module:rustici-software-cloud-v2/rustici-software-cloud-v2-model/LearnerSchema}
      */
     LearnerSchema: LearnerSchema,
-    /**
-     * The LinkSchema model constructor.
-     * @property {module:rustici-software-cloud-v2/rustici-software-cloud-v2-model/LinkSchema}
-     */
-    LinkSchema: LinkSchema,
     /**
      * The MessageSchema model constructor.
      * @property {module:rustici-software-cloud-v2/rustici-software-cloud-v2-model/MessageSchema}
@@ -301,10 +285,10 @@
      */
     SettingMetadata: SettingMetadata,
     /**
-     * The SettingMetadataValidValues model constructor.
-     * @property {module:rustici-software-cloud-v2/rustici-software-cloud-v2-model/SettingMetadataValidValues}
+     * The SettingValidValue model constructor.
+     * @property {module:rustici-software-cloud-v2/rustici-software-cloud-v2-model/SettingValidValue}
      */
-    SettingMetadataValidValues: SettingMetadataValidValues,
+    SettingValidValue: SettingValidValue,
     /**
      * The SettingsIndividualSchema model constructor.
      * @property {module:rustici-software-cloud-v2/rustici-software-cloud-v2-model/SettingsIndividualSchema}
@@ -331,6 +315,11 @@
      */
     StringResultSchema: StringResultSchema,
     /**
+     * The TagListSchema model constructor.
+     * @property {module:rustici-software-cloud-v2/rustici-software-cloud-v2-model/TagListSchema}
+     */
+    TagListSchema: TagListSchema,
+    /**
      * The TitleSchema model constructor.
      * @property {module:rustici-software-cloud-v2/rustici-software-cloud-v2-model/TitleSchema}
      */
@@ -340,6 +329,76 @@
      * @property {module:rustici-software-cloud-v2/rustici-software-cloud-v2-model/TokenRequestSchema}
      */
     TokenRequestSchema: TokenRequestSchema,
+    /**
+     * The XapiAccount model constructor.
+     * @property {module:rustici-software-cloud-v2/rustici-software-cloud-v2-model/XapiAccount}
+     */
+    XapiAccount: XapiAccount,
+    /**
+     * The XapiActivity model constructor.
+     * @property {module:rustici-software-cloud-v2/rustici-software-cloud-v2-model/XapiActivity}
+     */
+    XapiActivity: XapiActivity,
+    /**
+     * The XapiActivityDefinition model constructor.
+     * @property {module:rustici-software-cloud-v2/rustici-software-cloud-v2-model/XapiActivityDefinition}
+     */
+    XapiActivityDefinition: XapiActivityDefinition,
+    /**
+     * The XapiAgentGroup model constructor.
+     * @property {module:rustici-software-cloud-v2/rustici-software-cloud-v2-model/XapiAgentGroup}
+     */
+    XapiAgentGroup: XapiAgentGroup,
+    /**
+     * The XapiAttachment model constructor.
+     * @property {module:rustici-software-cloud-v2/rustici-software-cloud-v2-model/XapiAttachment}
+     */
+    XapiAttachment: XapiAttachment,
+    /**
+     * The XapiContext model constructor.
+     * @property {module:rustici-software-cloud-v2/rustici-software-cloud-v2-model/XapiContext}
+     */
+    XapiContext: XapiContext,
+    /**
+     * The XapiContextActivity model constructor.
+     * @property {module:rustici-software-cloud-v2/rustici-software-cloud-v2-model/XapiContextActivity}
+     */
+    XapiContextActivity: XapiContextActivity,
+    /**
+     * The XapiInteractionComponent model constructor.
+     * @property {module:rustici-software-cloud-v2/rustici-software-cloud-v2-model/XapiInteractionComponent}
+     */
+    XapiInteractionComponent: XapiInteractionComponent,
+    /**
+     * The XapiResult model constructor.
+     * @property {module:rustici-software-cloud-v2/rustici-software-cloud-v2-model/XapiResult}
+     */
+    XapiResult: XapiResult,
+    /**
+     * The XapiScore model constructor.
+     * @property {module:rustici-software-cloud-v2/rustici-software-cloud-v2-model/XapiScore}
+     */
+    XapiScore: XapiScore,
+    /**
+     * The XapiStatement model constructor.
+     * @property {module:rustici-software-cloud-v2/rustici-software-cloud-v2-model/XapiStatement}
+     */
+    XapiStatement: XapiStatement,
+    /**
+     * The XapiStatementReference model constructor.
+     * @property {module:rustici-software-cloud-v2/rustici-software-cloud-v2-model/XapiStatementReference}
+     */
+    XapiStatementReference: XapiStatementReference,
+    /**
+     * The XapiStatementResult model constructor.
+     * @property {module:rustici-software-cloud-v2/rustici-software-cloud-v2-model/XapiStatementResult}
+     */
+    XapiStatementResult: XapiStatementResult,
+    /**
+     * The XapiVerb model constructor.
+     * @property {module:rustici-software-cloud-v2/rustici-software-cloud-v2-model/XapiVerb}
+     */
+    XapiVerb: XapiVerb,
     /**
      * The ApplicationManagementApi service constructor.
      * @property {module:rustici-software-cloud-v2/rustici-software-cloud-v2-api/ApplicationManagementApi}

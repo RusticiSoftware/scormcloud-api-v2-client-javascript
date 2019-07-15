@@ -23,7 +23,7 @@
     if (!root.RusticiSoftwareCloudV2) {
       root.RusticiSoftwareCloudV2 = {};
     }
-    root.RusticiSoftwareCloudV2.TagListSchema = factory(root.RusticiSoftwareCloudV2.ApiClient);
+    root.RusticiSoftwareCloudV2.BatchTagsSchema = factory(root.RusticiSoftwareCloudV2.ApiClient);
   }
 }(this, function(ApiClient) {
   'use strict';
@@ -32,33 +32,39 @@
 
 
   /**
-   * The TagListSchema model module.
-   * @module rustici-software-cloud-v2/rustici-software-cloud-v2-model/TagListSchema
+   * The BatchTagsSchema model module.
+   * @module rustici-software-cloud-v2/rustici-software-cloud-v2-model/BatchTagsSchema
    * @version 1.1.0-beta
    */
 
   /**
-   * Constructs a new <code>TagListSchema</code>.
-   * @alias module:rustici-software-cloud-v2/rustici-software-cloud-v2-model/TagListSchema
+   * Constructs a new <code>BatchTagsSchema</code>.
+   * @alias module:rustici-software-cloud-v2/rustici-software-cloud-v2-model/BatchTagsSchema
    * @class
+   * @param ids {Array.<String>} 
+   * @param tags {Array.<String>} 
    */
-  var exports = function() {
+  var exports = function(ids, tags) {
     var _this = this;
 
-
+    _this['ids'] = ids;
+    _this['tags'] = tags;
   };
 
   /**
-   * Constructs a <code>TagListSchema</code> from a plain JavaScript object, optionally creating a new instance.
+   * Constructs a <code>BatchTagsSchema</code> from a plain JavaScript object, optionally creating a new instance.
    * Copies all relevant properties from <code>data</code> to <code>obj</code> if supplied or a new instance if not.
    * @param {Object} data The plain JavaScript object bearing properties of interest.
-   * @param {module:rustici-software-cloud-v2/rustici-software-cloud-v2-model/TagListSchema} obj Optional instance to populate.
-   * @return {module:rustici-software-cloud-v2/rustici-software-cloud-v2-model/TagListSchema} The populated <code>TagListSchema</code> instance.
+   * @param {module:rustici-software-cloud-v2/rustici-software-cloud-v2-model/BatchTagsSchema} obj Optional instance to populate.
+   * @return {module:rustici-software-cloud-v2/rustici-software-cloud-v2-model/BatchTagsSchema} The populated <code>BatchTagsSchema</code> instance.
    */
   exports.constructFromObject = function(data, obj) {
     if (data) {
       obj = obj || new exports();
 
+      if (data.hasOwnProperty('ids')) {
+        obj['ids'] = ApiClient.convertToType(data['ids'], ['String']);
+      }
       if (data.hasOwnProperty('tags')) {
         obj['tags'] = ApiClient.convertToType(data['tags'], ['String']);
       }
@@ -66,6 +72,10 @@
     return obj;
   }
 
+  /**
+   * @member {Array.<String>} ids
+   */
+  exports.prototype['ids'] = undefined;
   /**
    * @member {Array.<String>} tags
    */
