@@ -1,6 +1,6 @@
 {
     "name": "rustici-software-cloud-v2",
-    "version": "1.1.0-beta",
+    "version": "1.0.0",
     "description": "Swagger Generated JavaScript Client for SCORM Cloud API v2",
     "main": "src/rustici-software-cloud-v2/index.js",
     "directories": {
