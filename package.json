@@ -1,5 +1,5 @@
 {
-    "name": "rustici-software-cloud-v2",
+    "name": "@rusticisoftware/scormcloud-api-v2-client-javascript",
     "version": "1.0.1",
     "description": "Swagger Generated JavaScript Client for SCORM Cloud API v2",
     "main": "src/rustici-software-cloud-v2/index.js",
