@@ -14,18 +14,18 @@
 (function(root, factory) {
   if (typeof define === 'function' && define.amd) {
     // AMD. Register as an anonymous module.
-    define(['rustici-software-cloud-v2/ApiClient', 'rustici-software-cloud-v2/rustici-software-cloud-v2-model/MessageSchema', 'rustici-software-cloud-v2/rustici-software-cloud-v2-model/StringResultSchema', 'rustici-software-cloud-v2/rustici-software-cloud-v2-model/XapiCredentialPostSchema', 'rustici-software-cloud-v2/rustici-software-cloud-v2-model/XapiCredentialSchema', 'rustici-software-cloud-v2/rustici-software-cloud-v2-model/XapiCredentialsListSchema', 'rustici-software-cloud-v2/rustici-software-cloud-v2-model/XapiStatementPipeListSchema', 'rustici-software-cloud-v2/rustici-software-cloud-v2-model/XapiStatementPipePostSchema', 'rustici-software-cloud-v2/rustici-software-cloud-v2-model/XapiStatementPipeSchema'], factory);
+    define(['rustici-software-cloud-v2/ApiClient', 'rustici-software-cloud-v2/rustici-software-cloud-v2-model/MessageSchema', 'rustici-software-cloud-v2/rustici-software-cloud-v2-model/StringResultSchema', 'rustici-software-cloud-v2/rustici-software-cloud-v2-model/XapiCredentialPostSchema', 'rustici-software-cloud-v2/rustici-software-cloud-v2-model/XapiCredentialSchema', 'rustici-software-cloud-v2/rustici-software-cloud-v2-model/XapiCredentialsListSchema', 'rustici-software-cloud-v2/rustici-software-cloud-v2-model/XapiStatementPipeListSchema', 'rustici-software-cloud-v2/rustici-software-cloud-v2-model/XapiStatementPipePostSchema', 'rustici-software-cloud-v2/rustici-software-cloud-v2-model/XapiStatementPipePutSchema', 'rustici-software-cloud-v2/rustici-software-cloud-v2-model/XapiStatementPipeSchema'], factory);
   } else if (typeof module === 'object' && module.exports) {
     // CommonJS-like environments that support module.exports, like Node.
-    module.exports = factory(require('../ApiClient'), require('../rustici-software-cloud-v2-model/MessageSchema'), require('../rustici-software-cloud-v2-model/StringResultSchema'), require('../rustici-software-cloud-v2-model/XapiCredentialPostSchema'), require('../rustici-software-cloud-v2-model/XapiCredentialSchema'), require('../rustici-software-cloud-v2-model/XapiCredentialsListSchema'), require('../rustici-software-cloud-v2-model/XapiStatementPipeListSchema'), require('../rustici-software-cloud-v2-model/XapiStatementPipePostSchema'), require('../rustici-software-cloud-v2-model/XapiStatementPipeSchema'));
+    module.exports = factory(require('../ApiClient'), require('../rustici-software-cloud-v2-model/MessageSchema'), require('../rustici-software-cloud-v2-model/StringResultSchema'), require('../rustici-software-cloud-v2-model/XapiCredentialPostSchema'), require('../rustici-software-cloud-v2-model/XapiCredentialSchema'), require('../rustici-software-cloud-v2-model/XapiCredentialsListSchema'), require('../rustici-software-cloud-v2-model/XapiStatementPipeListSchema'), require('../rustici-software-cloud-v2-model/XapiStatementPipePostSchema'), require('../rustici-software-cloud-v2-model/XapiStatementPipePutSchema'), require('../rustici-software-cloud-v2-model/XapiStatementPipeSchema'));
   } else {
     // Browser globals (root is window)
     if (!root.RusticiSoftwareCloudV2) {
       root.RusticiSoftwareCloudV2 = {};
     }
-    root.RusticiSoftwareCloudV2.XapiApi = factory(root.RusticiSoftwareCloudV2.ApiClient, root.RusticiSoftwareCloudV2.MessageSchema, root.RusticiSoftwareCloudV2.StringResultSchema, root.RusticiSoftwareCloudV2.XapiCredentialPostSchema, root.RusticiSoftwareCloudV2.XapiCredentialSchema, root.RusticiSoftwareCloudV2.XapiCredentialsListSchema, root.RusticiSoftwareCloudV2.XapiStatementPipeListSchema, root.RusticiSoftwareCloudV2.XapiStatementPipePostSchema, root.RusticiSoftwareCloudV2.XapiStatementPipeSchema);
+    root.RusticiSoftwareCloudV2.XapiApi = factory(root.RusticiSoftwareCloudV2.ApiClient, root.RusticiSoftwareCloudV2.MessageSchema, root.RusticiSoftwareCloudV2.StringResultSchema, root.RusticiSoftwareCloudV2.XapiCredentialPostSchema, root.RusticiSoftwareCloudV2.XapiCredentialSchema, root.RusticiSoftwareCloudV2.XapiCredentialsListSchema, root.RusticiSoftwareCloudV2.XapiStatementPipeListSchema, root.RusticiSoftwareCloudV2.XapiStatementPipePostSchema, root.RusticiSoftwareCloudV2.XapiStatementPipePutSchema, root.RusticiSoftwareCloudV2.XapiStatementPipeSchema);
   }
-}(this, function(ApiClient, MessageSchema, StringResultSchema, XapiCredentialPostSchema, XapiCredentialSchema, XapiCredentialsListSchema, XapiStatementPipeListSchema, XapiStatementPipePostSchema, XapiStatementPipeSchema) {
+}(this, function(ApiClient, MessageSchema, StringResultSchema, XapiCredentialPostSchema, XapiCredentialSchema, XapiCredentialsListSchema, XapiStatementPipeListSchema, XapiStatementPipePostSchema, XapiStatementPipePutSchema, XapiStatementPipeSchema) {
   'use strict';
 
   /**
@@ -54,6 +54,7 @@
      */
 
     /**
+     * Create an xAPI statement pipe.
      * Create an xAPI statement pipe.
      * @param {module:rustici-software-cloud-v2/rustici-software-cloud-v2-model/XapiStatementPipePostSchema} xapiStatementPipe 
      * @param {module:rustici-software-cloud-v2/rustici-software-cloud-v2-api/XapiApi~createStatementPipeCallback} callback The callback function, accepting three arguments: error, data, response
@@ -99,6 +100,7 @@
 
     /**
      * Create a xAPI credential.
+     * Create a xAPI credential.
      * @param {module:rustici-software-cloud-v2/rustici-software-cloud-v2-model/XapiCredentialPostSchema} xapiCredential 
      * @param {module:rustici-software-cloud-v2/rustici-software-cloud-v2-api/XapiApi~createXapiCredentialCallback} callback The callback function, accepting three arguments: error, data, response
      * data is of type: {@link module:rustici-software-cloud-v2/rustici-software-cloud-v2-model/StringResultSchema}
@@ -143,7 +145,7 @@
 
     /**
      * Deletes this xAPI pipe.
-     * Caution: avoid re-creating a pipe with the same ID quickly after a delete. The old version could still be processing, in which case the new pipe could be updated improperly by the processor.
+     * Caution: avoid re-creating a pipe with the same ID quickly after a delete. The old version could still be processing, in which case the new pipe could be updated improperly by the processor. 
      * @param {String} statementPipeId id for this xAPI statement pipe
      * @param {module:rustici-software-cloud-v2/rustici-software-cloud-v2-api/XapiApi~deleteStatementPipeCallback} callback The callback function, accepting three arguments: error, data, response
      */
@@ -188,6 +190,7 @@
 
     /**
      * Deletes the xAPI credentials specified by the xAPI credentials id
+     * Deletes the xAPI credentials specified by the xAPI credentials id
      * @param {String} xapiCredentialId id for this xAPI credential
      * @param {module:rustici-software-cloud-v2/rustici-software-cloud-v2-api/XapiApi~deleteXapiCredentialCallback} callback The callback function, accepting three arguments: error, data, response
      */
@@ -231,6 +234,7 @@
      */
 
     /**
+     * Retrieves xAPI pipe for &#x60;xapiPipeId&#x60;
      * Retrieves xAPI pipe for &#x60;xapiPipeId&#x60;
      * @param {String} statementPipeId id for this xAPI statement pipe
      * @param {module:rustici-software-cloud-v2/rustici-software-cloud-v2-api/XapiApi~getStatementPipeCallback} callback The callback function, accepting three arguments: error, data, response
@@ -277,6 +281,7 @@
 
     /**
      * Get all of the xapiPipes for &#x60;appId&#x60;
+     * Get all of the xapiPipes for &#x60;appId&#x60;
      * @param {module:rustici-software-cloud-v2/rustici-software-cloud-v2-api/XapiApi~getStatementPipesCallback} callback The callback function, accepting three arguments: error, data, response
      * data is of type: {@link module:rustici-software-cloud-v2/rustici-software-cloud-v2-model/XapiStatementPipeListSchema}
      */
@@ -314,6 +319,7 @@
      */
 
     /**
+     * Retrieves the xAPI credentials specified by the xAPI credentials id.
      * Retrieves the xAPI credentials specified by the xAPI credentials id.
      * @param {String} xapiCredentialId id for this xAPI credential
      * @param {module:rustici-software-cloud-v2/rustici-software-cloud-v2-api/XapiApi~getXapiCredentialCallback} callback The callback function, accepting three arguments: error, data, response
@@ -360,6 +366,7 @@
 
     /**
      * Get the list of xapiCredentials
+     * Get the list of xapiCredentials
      * @param {Object} opts Optional parameters
      * @param {Date} opts.since Only &lt;&lt;resourcePathName&gt;&gt; updated since the specified ISO 8601 TimeStamp (inclusive) are included. If a time zone is not specified, UTC time zone will be used.
      * @param {String} opts.more Value for this parameter will be provided in the &#39;more&#39; property of &lt;&lt;resourcePathName&gt;&gt; lists, where needed. An opaque value, construction and parsing may change without notice.
@@ -404,9 +411,9 @@
 
     /**
      * Edit an existing xAPI pipe or create a new one.
-     * Editing a pipe will cause it to start over and forward any statements it finds, even if the prior version of the pipe had already forwarded those statements. If the pipe being edited is currently being processed, the this request will fail with a status code of 409.
+     * Editing a pipe will cause it to start over and forward any statements it finds, even if the prior version of the pipe had already forwarded those statements. If the pipe being edited is currently being processed, the this request will fail with a status code of 409. 
      * @param {String} statementPipeId id for this xAPI statement pipe
-     * @param {module:rustici-software-cloud-v2/rustici-software-cloud-v2-model/XapiStatementPipeSchema} xapiStatementPipe 
+     * @param {module:rustici-software-cloud-v2/rustici-software-cloud-v2-model/XapiStatementPipePutSchema} xapiStatementPipe 
      * @param {module:rustici-software-cloud-v2/rustici-software-cloud-v2-api/XapiApi~setStatementPipeCallback} callback The callback function, accepting three arguments: error, data, response
      * data is of type: {@link module:rustici-software-cloud-v2/rustici-software-cloud-v2-model/StringResultSchema}
      */
@@ -455,6 +462,7 @@
      */
 
     /**
+     * Edit an existing xAPI credential or create a new one, specified by the xAPI credentials id
      * Edit an existing xAPI credential or create a new one, specified by the xAPI credentials id
      * @param {String} xapiCredentialId id for this xAPI credential
      * @param {module:rustici-software-cloud-v2/rustici-software-cloud-v2-model/XapiCredentialPostSchema} xapiCredential 

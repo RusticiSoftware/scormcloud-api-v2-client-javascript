@@ -23,7 +23,7 @@
     if (!root.RusticiSoftwareCloudV2) {
       root.RusticiSoftwareCloudV2 = {};
     }
-    root.RusticiSoftwareCloudV2.XapiCredentialPostSchema = factory(root.RusticiSoftwareCloudV2.ApiClient, root.RusticiSoftwareCloudV2.XapiCredentialAuthTypeSchema, root.RusticiSoftwareCloudV2.XapiCredentialPermissionsLevelSchema);
+    root.RusticiSoftwareCloudV2.XapiCredentialPutSchema = factory(root.RusticiSoftwareCloudV2.ApiClient, root.RusticiSoftwareCloudV2.XapiCredentialAuthTypeSchema, root.RusticiSoftwareCloudV2.XapiCredentialPermissionsLevelSchema);
   }
 }(this, function(ApiClient, XapiCredentialAuthTypeSchema, XapiCredentialPermissionsLevelSchema) {
   'use strict';
@@ -32,43 +32,42 @@
 
 
   /**
-   * The XapiCredentialPostSchema model module.
-   * @module rustici-software-cloud-v2/rustici-software-cloud-v2-model/XapiCredentialPostSchema
+   * The XapiCredentialPutSchema model module.
+   * @module rustici-software-cloud-v2/rustici-software-cloud-v2-model/XapiCredentialPutSchema
    * @version 1.0.0
    */
 
   /**
-   * Constructs a new <code>XapiCredentialPostSchema</code>.
-   * @alias module:rustici-software-cloud-v2/rustici-software-cloud-v2-model/XapiCredentialPostSchema
+   * Constructs a new <code>XapiCredentialPutSchema</code>.
+   * @alias module:rustici-software-cloud-v2/rustici-software-cloud-v2-model/XapiCredentialPutSchema
    * @class
-   * @param name {String} 
-   * @param secret {String} 
-   * @param isEnabled {Boolean} 
-   * @param auth {module:rustici-software-cloud-v2/rustici-software-cloud-v2-model/XapiCredentialAuthTypeSchema} 
-   * @param permissionsLevel {module:rustici-software-cloud-v2/rustici-software-cloud-v2-model/XapiCredentialPermissionsLevelSchema} 
    */
-  var exports = function(name, secret, isEnabled, auth, permissionsLevel) {
+  var exports = function() {
     var _this = this;
 
-    _this['name'] = name;
 
-    _this['secret'] = secret;
-    _this['isEnabled'] = isEnabled;
-    _this['auth'] = auth;
-    _this['permissionsLevel'] = permissionsLevel;
+
+
+
+
+
+
   };
 
   /**
-   * Constructs a <code>XapiCredentialPostSchema</code> from a plain JavaScript object, optionally creating a new instance.
+   * Constructs a <code>XapiCredentialPutSchema</code> from a plain JavaScript object, optionally creating a new instance.
    * Copies all relevant properties from <code>data</code> to <code>obj</code> if supplied or a new instance if not.
    * @param {Object} data The plain JavaScript object bearing properties of interest.
-   * @param {module:rustici-software-cloud-v2/rustici-software-cloud-v2-model/XapiCredentialPostSchema} obj Optional instance to populate.
-   * @return {module:rustici-software-cloud-v2/rustici-software-cloud-v2-model/XapiCredentialPostSchema} The populated <code>XapiCredentialPostSchema</code> instance.
+   * @param {module:rustici-software-cloud-v2/rustici-software-cloud-v2-model/XapiCredentialPutSchema} obj Optional instance to populate.
+   * @return {module:rustici-software-cloud-v2/rustici-software-cloud-v2-model/XapiCredentialPutSchema} The populated <code>XapiCredentialPutSchema</code> instance.
    */
   exports.constructFromObject = function(data, obj) {
     if (data) {
       obj = obj || new exports();
 
+      if (data.hasOwnProperty('id')) {
+        obj['id'] = ApiClient.convertToType(data['id'], 'String');
+      }
       if (data.hasOwnProperty('name')) {
         obj['name'] = ApiClient.convertToType(data['name'], 'String');
       }
@@ -91,6 +90,10 @@
     return obj;
   }
 
+  /**
+   * @member {String} id
+   */
+  exports.prototype['id'] = undefined;
   /**
    * @member {String} name
    */

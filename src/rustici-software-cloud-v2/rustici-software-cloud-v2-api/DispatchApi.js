@@ -99,6 +99,7 @@
 
     /**
      * Create dispatches.
+     * Create multiple dispatches at once. 
      * @param {module:rustici-software-cloud-v2/rustici-software-cloud-v2-model/CreateDispatchListSchema} dispatchList 
      * @param {module:rustici-software-cloud-v2/rustici-software-cloud-v2-api/DispatchApi~createDispatchesCallback} callback The callback function, accepting three arguments: error, data, response
      */
@@ -141,8 +142,8 @@
      */
 
     /**
-     * DestinationsByTenantAndDestinationId
-     * Delete the destination with destinationId &#x3D; {destinationId}.
+     * Delete destination 
+     * Delete the destination with &#x60;destinationId&#x60; 
      * @param {String} destinationId Identifier for the destination
      * @param {module:rustici-software-cloud-v2/rustici-software-cloud-v2-api/DispatchApi~deleteDestinationCallback} callback The callback function, accepting three arguments: error, data, response
      */
@@ -186,8 +187,8 @@
      */
 
     /**
-     * DestinationsDispatchesByTenant
-     * Delete all related dispatches.
+     * Delete dispatches in destination 
+     * Delete the dispatches in a destination 
      * @param {String} destinationId Identifier for the destination
      * @param {module:rustici-software-cloud-v2/rustici-software-cloud-v2-api/DispatchApi~deleteDestinationDispatchesCallback} callback The callback function, accepting three arguments: error, data, response
      */
@@ -231,7 +232,8 @@
      */
 
     /**
-     * Delete tags for this destination
+     * Delete the tags for this destination 
+     * Delete the tags for this destination 
      * @param {String} destinationId Identifier for the destination
      * @param {module:rustici-software-cloud-v2/rustici-software-cloud-v2-model/TagListSchema} tags 
      * @param {module:rustici-software-cloud-v2/rustici-software-cloud-v2-api/DispatchApi~deleteDestinationTagsCallback} callback The callback function, accepting three arguments: error, data, response
@@ -281,8 +283,8 @@
      */
 
     /**
-     * DispatchesByTenantAndDispatchId
-     * Delete the dispatch with dispatchId &#x3D; {dispatchId}.
+     * Delete the dispatch with &#x60;dispatchId&#x60;. 
+     * Delete the dispatch with &#x60;dispatchId&#x60;. 
      * @param {String} dispatchId Identifier for the dispatch
      * @param {module:rustici-software-cloud-v2/rustici-software-cloud-v2-api/DispatchApi~deleteDispatchCallback} callback The callback function, accepting three arguments: error, data, response
      */
@@ -327,7 +329,7 @@
 
     /**
      * DispatchesByTenantAndDispatchId
-     * Delete the postback info dispatch with dispatchId &#x3D; {dispatchId}.
+     * Delete the postback info dispatch with &#39;dispatchId&#39;. 
      * @param {String} dispatchId Identifier for the dispatch
      * @param {module:rustici-software-cloud-v2/rustici-software-cloud-v2-api/DispatchApi~deleteDispatchPostbackInfoCallback} callback The callback function, accepting three arguments: error, data, response
      */
@@ -371,7 +373,8 @@
      */
 
     /**
-     * Delete tags for this dispatch
+     * Delete the tags for this dispatch. 
+     * Delete the tags for this dispatch. 
      * @param {String} dispatchId Identifier for the dispatch
      * @param {module:rustici-software-cloud-v2/rustici-software-cloud-v2-model/TagListSchema} tags 
      * @param {module:rustici-software-cloud-v2/rustici-software-cloud-v2-api/DispatchApi~deleteDispatchTagsCallback} callback The callback function, accepting three arguments: error, data, response
@@ -726,7 +729,8 @@
      */
 
     /**
-     * Get the tags for this destination
+     * Get the tags for this destination 
+     * Get the tags for this destination 
      * @param {String} destinationId Identifier for the destination
      * @param {module:rustici-software-cloud-v2/rustici-software-cloud-v2-api/DispatchApi~getDestinationTagsCallback} callback The callback function, accepting three arguments: error, data, response
      * data is of type: {@link module:rustici-software-cloud-v2/rustici-software-cloud-v2-model/TagListSchema}
@@ -872,8 +876,8 @@
      */
 
     /**
-     * DispatchesEnabledByTenantAndDispatchId
-     * True if the dispatch is enabled, or false if it is disabled.
+     * Get the &#x60;enabled&#x60; status for &#x60;dispatchId&#x60;. 
+     * Get the &#x60;enabled&#x60; status for &#x60;dispatchId&#x60;.  True if the dispatch is enabled, or false if it is disabled. 
      * @param {String} dispatchId Identifier for the dispatch
      * @param {module:rustici-software-cloud-v2/rustici-software-cloud-v2-api/DispatchApi~getDispatchEnabledCallback} callback The callback function, accepting three arguments: error, data, response
      * data is of type: {@link module:rustici-software-cloud-v2/rustici-software-cloud-v2-model/EnabledSchema}
@@ -919,7 +923,7 @@
 
     /**
      * Get if this dispatch has PII hashing enabled.
-     * True if the dispatch is set to hash user info, or false if it is disabled.
+     * Get if this dispatch has PII hashing enabled. True if the dispatch is set to hash user info, or false if it is disabled. 
      * @param {String} dispatchId Identifier for the dispatch
      * @param {module:rustici-software-cloud-v2/rustici-software-cloud-v2-api/DispatchApi~getDispatchHashUserInfoCallback} callback The callback function, accepting three arguments: error, data, response
      * data is of type: {@link module:rustici-software-cloud-v2/rustici-software-cloud-v2-model/EnabledSchema}
@@ -964,8 +968,8 @@
      */
 
     /**
-     * DispatchesRegistrationCountByTenant
-     * Get the registration count for this dispatch, and the date and time of the last count reset, if any.
+     * Get the registration count for &#x60;dispatchId&#x60;. 
+     * Get the registration count for this dispatch, and the date and time of the last count reset, if any. 
      * @param {String} dispatchId Identifier for the dispatch
      * @param {module:rustici-software-cloud-v2/rustici-software-cloud-v2-api/DispatchApi~getDispatchRegistrationCountCallback} callback The callback function, accepting three arguments: error, data, response
      * data is of type: {@link module:rustici-software-cloud-v2/rustici-software-cloud-v2-model/DispatchRegistrationCountSchema}
@@ -1010,7 +1014,8 @@
      */
 
     /**
-     * Get the tags for this dispatch
+     * Get the tags for this dispatch. 
+     * Get the tags for this dispatch. 
      * @param {String} dispatchId Identifier for the dispatch
      * @param {module:rustici-software-cloud-v2/rustici-software-cloud-v2-api/DispatchApi~getDispatchTagsCallback} callback The callback function, accepting three arguments: error, data, response
      * data is of type: {@link module:rustici-software-cloud-v2/rustici-software-cloud-v2-model/TagListSchema}
@@ -1056,7 +1061,7 @@
 
     /**
      * Get the ZIP for the dispatchId.
-     * Get the ZIP for the dispatch with dispatchId &#x3D; {dispatchId}.
+     * Get the ZIP for the dispatch with &#x60;dispatchId&#x60; 
      * @param {String} dispatchId Identifier for the dispatch
      * @param {Object} opts Optional parameters
      * @param {module:rustici-software-cloud-v2/rustici-software-cloud-v2-model/String} opts.type The type of dispatch package to export (SCORM12 only supported in cloud today) (default to SCORM12)
@@ -1162,7 +1167,8 @@
      */
 
     /**
-     * Set the tags for this destination
+     * Set the tags for this destination 
+     * Set the tags for this destination 
      * @param {String} destinationId Identifier for the destination
      * @param {module:rustici-software-cloud-v2/rustici-software-cloud-v2-model/TagListSchema} tags 
      * @param {module:rustici-software-cloud-v2/rustici-software-cloud-v2-api/DispatchApi~putDestinationTagsCallback} callback The callback function, accepting three arguments: error, data, response
@@ -1213,6 +1219,7 @@
 
     /**
      * Sets all of the provided tags on all of the provided destinations
+     * Sets all of the provided tags on all of the provided destinations
      * @param {module:rustici-software-cloud-v2/rustici-software-cloud-v2-model/BatchTagsSchema} batch Object representing an array of ids to apply an array of tags to.
      * @param {module:rustici-software-cloud-v2/rustici-software-cloud-v2-api/DispatchApi~putDestinationTagsBatchCallback} callback The callback function, accepting three arguments: error, data, response
      */
@@ -1255,7 +1262,8 @@
      */
 
     /**
-     * Set the tags for this dispatch
+     * Set the tags for this dispatch. 
+     * Set the tags for this dispatch. 
      * @param {String} dispatchId Identifier for the dispatch
      * @param {module:rustici-software-cloud-v2/rustici-software-cloud-v2-model/TagListSchema} tags 
      * @param {module:rustici-software-cloud-v2/rustici-software-cloud-v2-api/DispatchApi~putDispatchTagsCallback} callback The callback function, accepting three arguments: error, data, response
@@ -1305,7 +1313,8 @@
      */
 
     /**
-     * Sets all of the provided tags on all of the provided dispatches
+     * Sets all of the provided tags on all of the provided dispatches 
+     * Sets all of the provided tags on all of the provided dispatches 
      * @param {module:rustici-software-cloud-v2/rustici-software-cloud-v2-model/BatchTagsSchema} batch Object representing an array of ids to apply an array of tags to.
      * @param {module:rustici-software-cloud-v2/rustici-software-cloud-v2-api/DispatchApi~putDispatchTagsBatchCallback} callback The callback function, accepting three arguments: error, data, response
      */
@@ -1393,8 +1402,8 @@
      */
 
     /**
-     * DispatchesRegistrationCountByTenant
-     * Reset the registration count for this dispatch.
+     * Reset registration count. 
+     * Reset the registration count for this dispatch. 
      * @param {String} dispatchId Identifier for the dispatch
      * @param {module:rustici-software-cloud-v2/rustici-software-cloud-v2-api/DispatchApi~resetDispatchRegistrationCountCallback} callback The callback function, accepting three arguments: error, data, response
      */
@@ -1438,7 +1447,7 @@
      */
 
     /**
-     * Creates or updates the destination identified by the &#x60;destinationId&#x60; provided in the path. If the destination is being created, a name should be provided in the DestinationSchema, else an error will be thrown. You may also optionally supply the e-mail address of the user to be associated with this destination.  This e-mail address should correspond to a SCORM Cloud user account. If you do not supply an e-mail address upon the creation of a destination, the owner of the Realm will be used.  This can, of course, also be changed via calling this method to update an existing destination.
+     * Creates or updates the destination identified by the &#x60;destinationId&#x60; provided in the path. If the destination is being created, a name should be provided in the DestinationSchema, else an error will be thrown.  You may also optionally supply the e-mail address of the user to be associated with this destination.  This e-mail address should correspond to a SCORM Cloud user account. If you do not supply an e-mail address upon the creation of a destination, the owner of the Realm will be used.  This can, of course, also be changed via calling this method to update an existing destination. 
      * @param {String} destinationId Identifier for the destination
      * @param {module:rustici-software-cloud-v2/rustici-software-cloud-v2-model/DestinationSchema} destination 
      * @param {module:rustici-software-cloud-v2/rustici-software-cloud-v2-api/DispatchApi~setDestinationCallback} callback The callback function, accepting three arguments: error, data, response
@@ -1539,8 +1548,8 @@
      */
 
     /**
-     * DispatchesEnabledByTenantAndDispatchId
-     * Enable or disabled the dispatch.
+     * Set the &#x60;enabled&#x60; status for &#x60;dispatchId&#x60;. 
+     * Set the &#x60;enabled&#x60; status for &#x60;dispatchId&#x60;. 
      * @param {String} dispatchId Identifier for the dispatch
      * @param {module:rustici-software-cloud-v2/rustici-software-cloud-v2-model/EnabledSchema} enabled 
      * @param {module:rustici-software-cloud-v2/rustici-software-cloud-v2-api/DispatchApi~setDispatchEnabledCallback} callback The callback function, accepting three arguments: error, data, response

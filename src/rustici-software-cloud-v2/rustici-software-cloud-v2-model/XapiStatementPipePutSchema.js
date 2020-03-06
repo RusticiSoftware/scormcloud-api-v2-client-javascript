@@ -23,7 +23,7 @@
     if (!root.RusticiSoftwareCloudV2) {
       root.RusticiSoftwareCloudV2 = {};
     }
-    root.RusticiSoftwareCloudV2.XapiStatementPipePostSchema = factory(root.RusticiSoftwareCloudV2.ApiClient, root.RusticiSoftwareCloudV2.XapiEndpointSchema);
+    root.RusticiSoftwareCloudV2.XapiStatementPipePutSchema = factory(root.RusticiSoftwareCloudV2.ApiClient, root.RusticiSoftwareCloudV2.XapiEndpointSchema);
   }
 }(this, function(ApiClient, XapiEndpointSchema) {
   'use strict';
@@ -32,30 +32,29 @@
 
 
   /**
-   * The XapiStatementPipePostSchema model module.
-   * @module rustici-software-cloud-v2/rustici-software-cloud-v2-model/XapiStatementPipePostSchema
+   * The XapiStatementPipePutSchema model module.
+   * @module rustici-software-cloud-v2/rustici-software-cloud-v2-model/XapiStatementPipePutSchema
    * @version 1.0.0
    */
 
   /**
-   * Constructs a new <code>XapiStatementPipePostSchema</code>.
-   * @alias module:rustici-software-cloud-v2/rustici-software-cloud-v2-model/XapiStatementPipePostSchema
+   * Constructs a new <code>XapiStatementPipePutSchema</code>.
+   * @alias module:rustici-software-cloud-v2/rustici-software-cloud-v2-model/XapiStatementPipePutSchema
    * @class
-   * @param target {module:rustici-software-cloud-v2/rustici-software-cloud-v2-model/XapiEndpointSchema} 
    */
-  var exports = function(target) {
+  var exports = function() {
     var _this = this;
 
 
-    _this['target'] = target;
+
   };
 
   /**
-   * Constructs a <code>XapiStatementPipePostSchema</code> from a plain JavaScript object, optionally creating a new instance.
+   * Constructs a <code>XapiStatementPipePutSchema</code> from a plain JavaScript object, optionally creating a new instance.
    * Copies all relevant properties from <code>data</code> to <code>obj</code> if supplied or a new instance if not.
    * @param {Object} data The plain JavaScript object bearing properties of interest.
-   * @param {module:rustici-software-cloud-v2/rustici-software-cloud-v2-model/XapiStatementPipePostSchema} obj Optional instance to populate.
-   * @return {module:rustici-software-cloud-v2/rustici-software-cloud-v2-model/XapiStatementPipePostSchema} The populated <code>XapiStatementPipePostSchema</code> instance.
+   * @param {module:rustici-software-cloud-v2/rustici-software-cloud-v2-model/XapiStatementPipePutSchema} obj Optional instance to populate.
+   * @return {module:rustici-software-cloud-v2/rustici-software-cloud-v2-model/XapiStatementPipePutSchema} The populated <code>XapiStatementPipePutSchema</code> instance.
    */
   exports.constructFromObject = function(data, obj) {
     if (data) {

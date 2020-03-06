@@ -77,7 +77,7 @@
       var formParams = {
       };
 
-      var authNames = ['APP_NORMAL', 'OAUTH'];
+      var authNames = ['APP_MANAGEMENT', 'OAUTH'];
       var contentTypes = ['application/json'];
       var accepts = ['application/json'];
       var returnType = ApplicationSchema;
@@ -128,7 +128,7 @@
       var formParams = {
       };
 
-      var authNames = ['APP_NORMAL', 'OAUTH'];
+      var authNames = ['APP_MANAGEMENT', 'OAUTH'];
       var contentTypes = ['application/json'];
       var accepts = ['application/json'];
       var returnType = CredentialCreatedSchema;
@@ -216,7 +216,7 @@
       var formParams = {
       };
 
-      var authNames = ['APP_NORMAL', 'OAUTH'];
+      var authNames = ['APP_MANAGEMENT', 'OAUTH'];
       var contentTypes = ['application/json'];
       var accepts = ['application/json'];
       var returnType = null;
@@ -318,7 +318,7 @@
       var formParams = {
       };
 
-      var authNames = ['APP_NORMAL', 'OAUTH'];
+      var authNames = ['APP_MANAGEMENT', 'OAUTH'];
       var contentTypes = ['application/json'];
       var accepts = ['application/json'];
       var returnType = null;
@@ -385,6 +385,7 @@
      */
 
     /**
+     * Get a list of all applications for the realm.
      * Get list of all applications in this realm.
      * @param {module:rustici-software-cloud-v2/rustici-software-cloud-v2-api/ApplicationManagementApi~getApplicationListCallback} callback The callback function, accepting three arguments: error, data, response
      * data is of type: {@link module:rustici-software-cloud-v2/rustici-software-cloud-v2-model/ApplicationListSchema}
@@ -402,7 +403,7 @@
       var formParams = {
       };
 
-      var authNames = ['APP_NORMAL', 'OAUTH'];
+      var authNames = ['APP_MANAGEMENT', 'OAUTH'];
       var contentTypes = ['application/json'];
       var accepts = ['application/json'];
       var returnType = ApplicationListSchema;
@@ -423,7 +424,7 @@
      */
 
     /**
-     * Retrieve a list of all credentials (aka secret keys) and their statuses. 
+     * Retrieve a list of all credentials (aka secret keys) belonging to &#x60;childAppId&#x60; and their statuses. 
      * @param {String} childAppId 
      * @param {module:rustici-software-cloud-v2/rustici-software-cloud-v2-api/ApplicationManagementApi~getCredentialsCallback} callback The callback function, accepting three arguments: error, data, response
      * data is of type: {@link module:rustici-software-cloud-v2/rustici-software-cloud-v2-model/CredentialListSchema}
@@ -447,7 +448,7 @@
       var formParams = {
       };
 
-      var authNames = ['APP_NORMAL', 'OAUTH'];
+      var authNames = ['APP_MANAGEMENT', 'OAUTH'];
       var contentTypes = ['application/json'];
       var accepts = ['application/json'];
       var returnType = CredentialListSchema;
@@ -468,7 +469,7 @@
      */
 
     /**
-     * Set configuration settings for the application level.  These settings will only affect items within the application which do not have their own configuration set.  This can be used to effectively set application level defaults.
+     * Set configuration settings for the application level.  These settings will only affect items within the application which do not have their own configuration set.  This can be used to effectively set application level defaults. 
      * @param {module:rustici-software-cloud-v2/rustici-software-cloud-v2-model/SettingsPostSchema} configurationSettings 
      * @param {Object} opts Optional parameters
      * @param {module:rustici-software-cloud-v2/rustici-software-cloud-v2-model/String} opts.learningStandard If specified, the request will be scoped to the provided learning standard.
@@ -553,7 +554,7 @@
       var formParams = {
       };
 
-      var authNames = ['APP_NORMAL', 'OAUTH'];
+      var authNames = ['APP_MANAGEMENT', 'OAUTH'];
       var contentTypes = ['application/json'];
       var accepts = ['application/json'];
       var returnType = null;
