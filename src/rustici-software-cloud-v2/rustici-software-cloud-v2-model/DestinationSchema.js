@@ -14,18 +14,18 @@
 (function(root, factory) {
   if (typeof define === 'function' && define.amd) {
     // AMD. Register as an anonymous module.
-    define(['rustici-software-cloud-v2/ApiClient'], factory);
+    define(['rustici-software-cloud-v2/ApiClient', 'rustici-software-cloud-v2/rustici-software-cloud-v2-model/LaunchAuthSchema'], factory);
   } else if (typeof module === 'object' && module.exports) {
     // CommonJS-like environments that support module.exports, like Node.
-    module.exports = factory(require('../ApiClient'));
+    module.exports = factory(require('../ApiClient'), require('./LaunchAuthSchema'));
   } else {
     // Browser globals (root is window)
     if (!root.RusticiSoftwareCloudV2) {
       root.RusticiSoftwareCloudV2 = {};
     }
-    root.RusticiSoftwareCloudV2.DestinationSchema = factory(root.RusticiSoftwareCloudV2.ApiClient);
+    root.RusticiSoftwareCloudV2.DestinationSchema = factory(root.RusticiSoftwareCloudV2.ApiClient, root.RusticiSoftwareCloudV2.LaunchAuthSchema);
   }
-}(this, function(ApiClient) {
+}(this, function(ApiClient, LaunchAuthSchema) {
   'use strict';
 
 
@@ -44,6 +44,7 @@
    */
   var exports = function() {
     var _this = this;
+
 
 
 
@@ -74,6 +75,9 @@
       if (data.hasOwnProperty('notes')) {
         obj['notes'] = ApiClient.convertToType(data['notes'], 'String');
       }
+      if (data.hasOwnProperty('launchAuth')) {
+        obj['launchAuth'] = LaunchAuthSchema.constructFromObject(data['launchAuth']);
+      }
     }
     return obj;
   }
@@ -98,6 +102,10 @@
    * @member {String} notes
    */
   exports.prototype['notes'] = undefined;
+  /**
+   * @member {module:rustici-software-cloud-v2/rustici-software-cloud-v2-model/LaunchAuthSchema} launchAuth
+   */
+  exports.prototype['launchAuth'] = undefined;
 
 
 

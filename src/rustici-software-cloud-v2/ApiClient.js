@@ -55,9 +55,7 @@
     this.authentications = {
       'APP_MANAGEMENT': {type: 'basic'},
       'APP_NORMAL': {type: 'basic'},
-      'LAUNCH_TOKEN': {type: 'apiKey', 'in': 'query', name: 'launchToken'},
-      'OAUTH': {type: 'oauth2'},
-      'URL_TOKEN': {type: 'apiKey', 'in': 'query', name: 'authtoken'}
+      'OAUTH': {type: 'oauth2'}
     };
     /**
      * The default HTTP headers to be included for all API calls.

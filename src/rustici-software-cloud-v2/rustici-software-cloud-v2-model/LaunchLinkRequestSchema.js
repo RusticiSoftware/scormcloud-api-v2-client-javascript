@@ -14,18 +14,18 @@
 (function(root, factory) {
   if (typeof define === 'function' && define.amd) {
     // AMD. Register as an anonymous module.
-    define(['rustici-software-cloud-v2/ApiClient', 'rustici-software-cloud-v2/rustici-software-cloud-v2-model/ItemValuePairSchema'], factory);
+    define(['rustici-software-cloud-v2/ApiClient', 'rustici-software-cloud-v2/rustici-software-cloud-v2-model/ItemValuePairSchema', 'rustici-software-cloud-v2/rustici-software-cloud-v2-model/LaunchAuthSchema'], factory);
   } else if (typeof module === 'object' && module.exports) {
     // CommonJS-like environments that support module.exports, like Node.
-    module.exports = factory(require('../ApiClient'), require('./ItemValuePairSchema'));
+    module.exports = factory(require('../ApiClient'), require('./ItemValuePairSchema'), require('./LaunchAuthSchema'));
   } else {
     // Browser globals (root is window)
     if (!root.RusticiSoftwareCloudV2) {
       root.RusticiSoftwareCloudV2 = {};
     }
-    root.RusticiSoftwareCloudV2.LaunchLinkRequestSchema = factory(root.RusticiSoftwareCloudV2.ApiClient, root.RusticiSoftwareCloudV2.ItemValuePairSchema);
+    root.RusticiSoftwareCloudV2.LaunchLinkRequestSchema = factory(root.RusticiSoftwareCloudV2.ApiClient, root.RusticiSoftwareCloudV2.ItemValuePairSchema, root.RusticiSoftwareCloudV2.LaunchAuthSchema);
   }
-}(this, function(ApiClient, ItemValuePairSchema) {
+}(this, function(ApiClient, ItemValuePairSchema, LaunchAuthSchema) {
   'use strict';
 
 
@@ -48,6 +48,7 @@
 
 
     _this['redirectOnExitUrl'] = redirectOnExitUrl;
+
 
 
 
@@ -98,6 +99,9 @@
       }
       if (data.hasOwnProperty('additionalvalues')) {
         obj['additionalvalues'] = ApiClient.convertToType(data['additionalvalues'], [ItemValuePairSchema]);
+      }
+      if (data.hasOwnProperty('launchAuth')) {
+        obj['launchAuth'] = LaunchAuthSchema.constructFromObject(data['launchAuth']);
       }
     }
     return obj;
@@ -151,6 +155,10 @@
    * @member {Array.<module:rustici-software-cloud-v2/rustici-software-cloud-v2-model/ItemValuePairSchema>} additionalvalues
    */
   exports.prototype['additionalvalues'] = undefined;
+  /**
+   * @member {module:rustici-software-cloud-v2/rustici-software-cloud-v2-model/LaunchAuthSchema} launchAuth
+   */
+  exports.prototype['launchAuth'] = undefined;
 
 
 

@@ -54,7 +54,8 @@
      */
 
     /**
-     * Get back the version and platform of the running instance of Engine
+     * Get back the API version and application name. 
+     * Get back the API version and application name. 
      * @param {module:rustici-software-cloud-v2/rustici-software-cloud-v2-api/AboutApi~getAboutCallback} callback The callback function, accepting three arguments: error, data, response
      * data is of type: {@link module:rustici-software-cloud-v2/rustici-software-cloud-v2-model/AboutSchema}
      */

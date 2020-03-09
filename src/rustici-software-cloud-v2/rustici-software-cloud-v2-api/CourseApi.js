@@ -1171,49 +1171,6 @@
     }
 
     /**
-     * Callback function to receive the result of the putLearnerTagsBatch operation.
-     * @callback module:rustici-software-cloud-v2/rustici-software-cloud-v2-api/CourseApi~putLearnerTagsBatchCallback
-     * @param {String} error Error message, if any.
-     * @param data This operation does not return a value.
-     * @param {String} response The complete HTTP response.
-     */
-
-    /**
-     * Sets all of the provided tags on all of the provided learners
-     * @param {module:rustici-software-cloud-v2/rustici-software-cloud-v2-model/BatchTagsSchema} batch Object representing an array of ids to apply an array of tags to.
-     * @param {module:rustici-software-cloud-v2/rustici-software-cloud-v2-api/CourseApi~putLearnerTagsBatchCallback} callback The callback function, accepting three arguments: error, data, response
-     */
-    this.putLearnerTagsBatch = function(batch, callback) {
-      var postBody = batch;
-
-      // verify the required parameter 'batch' is set
-      if (batch == undefined || batch == null) {
-        throw new Error("Missing the required parameter 'batch' when calling putLearnerTagsBatch");
-      }
-
-
-      var pathParams = {
-      };
-      var queryParams = {
-      };
-      var headerParams = {
-      };
-      var formParams = {
-      };
-
-      var authNames = ['APP_NORMAL', 'OAUTH'];
-      var contentTypes = ['application/json'];
-      var accepts = ['application/json'];
-      var returnType = null;
-
-      return this.apiClient.callApi(
-        '/learner/tags', 'PUT',
-        pathParams, queryParams, headerParams, formParams, postBody,
-        authNames, contentTypes, accepts, returnType, callback
-      );
-    }
-
-    /**
      * Callback function to receive the result of the setCourseConfiguration operation.
      * @callback module:rustici-software-cloud-v2/rustici-software-cloud-v2-api/CourseApi~setCourseConfigurationCallback
      * @param {String} error Error message, if any.

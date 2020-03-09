@@ -144,7 +144,8 @@
      */
 
     /**
-     * Delete tags for this invitation
+     * Delete the tags for this invitation 
+     * Delete the tags for this invitation 
      * @param {String} invitationId invitation id
      * @param {module:rustici-software-cloud-v2/rustici-software-cloud-v2-model/TagListSchema} tags 
      * @param {module:rustici-software-cloud-v2/rustici-software-cloud-v2-api/InvitationsApi~deleteInvitationTagsCallback} callback The callback function, accepting three arguments: error, data, response
@@ -247,7 +248,8 @@
      */
 
     /**
-     * Get the tags for this invitation
+     * Get the tags for this invitation 
+     * Get the tags for this invitation 
      * @param {String} invitationId invitation id
      * @param {module:rustici-software-cloud-v2/rustici-software-cloud-v2-api/InvitationsApi~getInvitationTagsCallback} callback The callback function, accepting three arguments: error, data, response
      * data is of type: {@link module:rustici-software-cloud-v2/rustici-software-cloud-v2-model/TagListSchema}
@@ -656,7 +658,8 @@
      */
 
     /**
-     * Set the tags for this invitation
+     * Set the tags for this invitation 
+     * Set the tags for this invitation 
      * @param {String} invitationId invitation id
      * @param {module:rustici-software-cloud-v2/rustici-software-cloud-v2-model/TagListSchema} tags 
      * @param {module:rustici-software-cloud-v2/rustici-software-cloud-v2-api/InvitationsApi~putInvitationTagsCallback} callback The callback function, accepting three arguments: error, data, response
@@ -706,7 +709,8 @@
      */
 
     /**
-     * Sets all of the provided tags on all of the provided invitations
+     * Sets all of the provided tags on all of the provided invitations 
+     * Sets all of the provided tags on all of the provided invitations 
      * @param {module:rustici-software-cloud-v2/rustici-software-cloud-v2-model/BatchTagsSchema} batch Object representing an array of ids to apply an array of tags to.
      * @param {module:rustici-software-cloud-v2/rustici-software-cloud-v2-api/InvitationsApi~putInvitationTagsBatchCallback} callback The callback function, accepting three arguments: error, data, response
      */

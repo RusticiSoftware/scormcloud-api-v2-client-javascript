@@ -55,6 +55,7 @@
 
     /**
      * Authenticates for a oauth token
+     * Creates, signs and returns an OAuth2 token based on the provided permissions, if the credentials used to request the token have the permissions being requested.  &gt;Note:  &gt;The token is not stored and therefore can not be modified or deleted. The requested permissions are encoded in the token which is then signed. As long as the secret used to create it is not changed the token will be valid until it expires. 
      * @param {String} scope 
      * @param {Object} opts Optional parameters
      * @param {Number} opts.expiration  (default to 300)

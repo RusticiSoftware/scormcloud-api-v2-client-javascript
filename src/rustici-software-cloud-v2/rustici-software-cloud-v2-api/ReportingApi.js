@@ -55,6 +55,7 @@
 
     /**
      * Get all of the account information specified by the given app ID
+     * Get all of the account information specified by the given app ID
      * @param {module:rustici-software-cloud-v2/rustici-software-cloud-v2-api/ReportingApi~getAccountInfoCallback} callback The callback function, accepting three arguments: error, data, response
      * data is of type: {@link module:rustici-software-cloud-v2/rustici-software-cloud-v2-model/ReportageAccountInfoSchema}
      */
@@ -92,6 +93,7 @@
      */
 
     /**
+     * Get a session authentication token to use when launching Reportage
      * Get a session authentication token to use when launching Reportage
      * @param {module:rustici-software-cloud-v2/rustici-software-cloud-v2-model/String} navPermission The navigation permissions for this Reportage session
      * @param {Object} opts Optional parameters
@@ -141,6 +143,7 @@
      */
 
     /**
+     * Get the link to a page in Reportage with the given authentication and permissions
      * Get the link to a page in Reportage with the given authentication and permissions
      * @param {String} auth The reportage authentication token retrieved from a previous call to &#x60;GET reportageAuth&#x60;
      * @param {String} reportUrl The Reportage URL to try and access
