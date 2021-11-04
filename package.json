@@ -1,15 +1,8 @@
 {
-    "name": "@rusticisoftware/scormcloud-api-v2-client-javascript",
-    "version": "1.0.1",
+    "name": "rustici-software-cloud-v2",
+    "version": "2.0.0",
     "description": "Swagger Generated JavaScript Client for SCORM Cloud API v2",
     "main": "src/rustici-software-cloud-v2/index.js",
-    "directories": {
-        "doc": "docs",
-        "test": "test"
-    },
-    "scripts": {
-        "test": "./node_modules/mocha/bin/mocha --recursive"
-    },
     "repository": {
         "type": "git",
         "url": "git+https://github.com/RusticiSoftware/scormcloud-api-v2-client-javascript.git"
@@ -23,7 +16,7 @@
         "rusticisoftware"
     ],
     "author": "Rustici Software",
-    "license": "",
+    "license": "Apache-2.0",
     "bugs": {
         "url": "https://github.com/RusticiSoftware/scormcloud-api-v2-client-javascript/issues"
     },
@@ -32,6 +25,7 @@
         "fs": false
     },
     "dependencies": {
-        "superagent": "3.7.0"
+        "superagent": "3.7.0",
+        "querystring": "0.2.0"
     }
 }
