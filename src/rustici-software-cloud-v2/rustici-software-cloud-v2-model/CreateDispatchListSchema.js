@@ -33,7 +33,7 @@
   /**
    * The CreateDispatchListSchema model module.
    * @module rustici-software-cloud-v2/rustici-software-cloud-v2-model/CreateDispatchListSchema
-   * @version 2.0.0
+   * @version 2.0.1
    */
 
   /**

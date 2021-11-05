@@ -33,7 +33,7 @@
   /**
    * Invitations service.
    * @module rustici-software-cloud-v2/rustici-software-cloud-v2-api/InvitationsApi
-   * @version 2.0.0
+   * @version 2.0.1
    */
 
   /**
