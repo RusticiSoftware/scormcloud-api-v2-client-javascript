@@ -33,7 +33,6 @@
   /**
    * The TokenRequestSchema model module.
    * @module rustici-software-cloud-v2/rustici-software-cloud-v2-model/TokenRequestSchema
-   * @version 2.1.0
    */
 
   /**

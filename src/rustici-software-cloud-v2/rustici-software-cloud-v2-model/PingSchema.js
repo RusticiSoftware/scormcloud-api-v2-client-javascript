@@ -33,7 +33,6 @@
   /**
    * The PingSchema model module.
    * @module rustici-software-cloud-v2/rustici-software-cloud-v2-model/PingSchema
-   * @version 2.1.0
    */
 
   /**

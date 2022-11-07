@@ -16,24 +16,23 @@
 (function(root, factory) {
   if (typeof define === 'function' && define.amd) {
     // AMD. Register as an anonymous module.
-    define(['rustici-software-cloud-v2/ApiClient', 'rustici-software-cloud-v2/rustici-software-cloud-v2-model/ApplicationInfoSchema', 'rustici-software-cloud-v2/rustici-software-cloud-v2-model/ApplicationListSchema', 'rustici-software-cloud-v2/rustici-software-cloud-v2-model/ApplicationRequestSchema', 'rustici-software-cloud-v2/rustici-software-cloud-v2-model/ApplicationSchema', 'rustici-software-cloud-v2/rustici-software-cloud-v2-model/CredentialCreatedSchema', 'rustici-software-cloud-v2/rustici-software-cloud-v2-model/CredentialListSchema', 'rustici-software-cloud-v2/rustici-software-cloud-v2-model/CredentialRequestSchema', 'rustici-software-cloud-v2/rustici-software-cloud-v2-model/MessageSchema', 'rustici-software-cloud-v2/rustici-software-cloud-v2-model/SettingListSchema', 'rustici-software-cloud-v2/rustici-software-cloud-v2-model/SettingsPostSchema', 'rustici-software-cloud-v2/rustici-software-cloud-v2-model/StringResultSchema', 'rustici-software-cloud-v2/rustici-software-cloud-v2-model/TokenRequestSchema', 'rustici-software-cloud-v2/rustici-software-cloud-v2-model/UpdateApplicationSchema'], factory);
+    define(['rustici-software-cloud-v2/ApiClient', 'rustici-software-cloud-v2/rustici-software-cloud-v2-model/ApplicationInfoListSchema', 'rustici-software-cloud-v2/rustici-software-cloud-v2-model/ApplicationInfoSchema', 'rustici-software-cloud-v2/rustici-software-cloud-v2-model/ApplicationListSchema', 'rustici-software-cloud-v2/rustici-software-cloud-v2-model/ApplicationRequestSchema', 'rustici-software-cloud-v2/rustici-software-cloud-v2-model/ApplicationSchema', 'rustici-software-cloud-v2/rustici-software-cloud-v2-model/CredentialCreatedSchema', 'rustici-software-cloud-v2/rustici-software-cloud-v2-model/CredentialListSchema', 'rustici-software-cloud-v2/rustici-software-cloud-v2-model/CredentialRequestSchema', 'rustici-software-cloud-v2/rustici-software-cloud-v2-model/MessageSchema', 'rustici-software-cloud-v2/rustici-software-cloud-v2-model/SettingListSchema', 'rustici-software-cloud-v2/rustici-software-cloud-v2-model/SettingsPostSchema', 'rustici-software-cloud-v2/rustici-software-cloud-v2-model/StringResultSchema', 'rustici-software-cloud-v2/rustici-software-cloud-v2-model/TokenRequestSchema', 'rustici-software-cloud-v2/rustici-software-cloud-v2-model/UpdateApplicationSchema'], factory);
   } else if (typeof module === 'object' && module.exports) {
     // CommonJS-like environments that support module.exports, like Node.
-    module.exports = factory(require('../ApiClient'), require('../rustici-software-cloud-v2-model/ApplicationInfoSchema'), require('../rustici-software-cloud-v2-model/ApplicationListSchema'), require('../rustici-software-cloud-v2-model/ApplicationRequestSchema'), require('../rustici-software-cloud-v2-model/ApplicationSchema'), require('../rustici-software-cloud-v2-model/CredentialCreatedSchema'), require('../rustici-software-cloud-v2-model/CredentialListSchema'), require('../rustici-software-cloud-v2-model/CredentialRequestSchema'), require('../rustici-software-cloud-v2-model/MessageSchema'), require('../rustici-software-cloud-v2-model/SettingListSchema'), require('../rustici-software-cloud-v2-model/SettingsPostSchema'), require('../rustici-software-cloud-v2-model/StringResultSchema'), require('../rustici-software-cloud-v2-model/TokenRequestSchema'), require('../rustici-software-cloud-v2-model/UpdateApplicationSchema'));
+    module.exports = factory(require('../ApiClient'), require('../rustici-software-cloud-v2-model/ApplicationInfoListSchema'), require('../rustici-software-cloud-v2-model/ApplicationInfoSchema'), require('../rustici-software-cloud-v2-model/ApplicationListSchema'), require('../rustici-software-cloud-v2-model/ApplicationRequestSchema'), require('../rustici-software-cloud-v2-model/ApplicationSchema'), require('../rustici-software-cloud-v2-model/CredentialCreatedSchema'), require('../rustici-software-cloud-v2-model/CredentialListSchema'), require('../rustici-software-cloud-v2-model/CredentialRequestSchema'), require('../rustici-software-cloud-v2-model/MessageSchema'), require('../rustici-software-cloud-v2-model/SettingListSchema'), require('../rustici-software-cloud-v2-model/SettingsPostSchema'), require('../rustici-software-cloud-v2-model/StringResultSchema'), require('../rustici-software-cloud-v2-model/TokenRequestSchema'), require('../rustici-software-cloud-v2-model/UpdateApplicationSchema'));
   } else {
     // Browser globals (root is window)
     if (!root.RusticiSoftwareCloudV2) {
       root.RusticiSoftwareCloudV2 = {};
     }
-    root.RusticiSoftwareCloudV2.ApplicationManagementApi = factory(root.RusticiSoftwareCloudV2.ApiClient, root.RusticiSoftwareCloudV2.ApplicationInfoSchema, root.RusticiSoftwareCloudV2.ApplicationListSchema, root.RusticiSoftwareCloudV2.ApplicationRequestSchema, root.RusticiSoftwareCloudV2.ApplicationSchema, root.RusticiSoftwareCloudV2.CredentialCreatedSchema, root.RusticiSoftwareCloudV2.CredentialListSchema, root.RusticiSoftwareCloudV2.CredentialRequestSchema, root.RusticiSoftwareCloudV2.MessageSchema, root.RusticiSoftwareCloudV2.SettingListSchema, root.RusticiSoftwareCloudV2.SettingsPostSchema, root.RusticiSoftwareCloudV2.StringResultSchema, root.RusticiSoftwareCloudV2.TokenRequestSchema, root.RusticiSoftwareCloudV2.UpdateApplicationSchema);
+    root.RusticiSoftwareCloudV2.ApplicationManagementApi = factory(root.RusticiSoftwareCloudV2.ApiClient, root.RusticiSoftwareCloudV2.ApplicationInfoListSchema, root.RusticiSoftwareCloudV2.ApplicationInfoSchema, root.RusticiSoftwareCloudV2.ApplicationListSchema, root.RusticiSoftwareCloudV2.ApplicationRequestSchema, root.RusticiSoftwareCloudV2.ApplicationSchema, root.RusticiSoftwareCloudV2.CredentialCreatedSchema, root.RusticiSoftwareCloudV2.CredentialListSchema, root.RusticiSoftwareCloudV2.CredentialRequestSchema, root.RusticiSoftwareCloudV2.MessageSchema, root.RusticiSoftwareCloudV2.SettingListSchema, root.RusticiSoftwareCloudV2.SettingsPostSchema, root.RusticiSoftwareCloudV2.StringResultSchema, root.RusticiSoftwareCloudV2.TokenRequestSchema, root.RusticiSoftwareCloudV2.UpdateApplicationSchema);
   }
-}(this, function(ApiClient, ApplicationInfoSchema, ApplicationListSchema, ApplicationRequestSchema, ApplicationSchema, CredentialCreatedSchema, CredentialListSchema, CredentialRequestSchema, MessageSchema, SettingListSchema, SettingsPostSchema, StringResultSchema, TokenRequestSchema, UpdateApplicationSchema) {
+}(this, function(ApiClient, ApplicationInfoListSchema, ApplicationInfoSchema, ApplicationListSchema, ApplicationRequestSchema, ApplicationSchema, CredentialCreatedSchema, CredentialListSchema, CredentialRequestSchema, MessageSchema, SettingListSchema, SettingsPostSchema, StringResultSchema, TokenRequestSchema, UpdateApplicationSchema) {
   'use strict';
 
   /**
    * ApplicationManagement service.
    * @module rustici-software-cloud-v2/rustici-software-cloud-v2-api/ApplicationManagementApi
-   * @version 2.1.0
    */
 
   /**
@@ -461,10 +460,11 @@
      */
 
     /**
-     * Use the Application Management App to get a list of Applications 
-     * Returns a list of all applications which are in this Realm.  >**Note:** >Each Realm has a special application called the **Application Management Application**.  When using this special application's credentials to authenticate with the API, you are able to perform actions on all the other applications within that Realm (and only those actions, this isn't a general purpose credential).  You can list, add, update, and delete both applications and credentials with this API resource. 
+     * (Deprecated) Use the Application Management App to get basic data about all Applications in a Realm 
+     * Returns a list of all applications which are in this Realm.  >**Deprecated:** >It is advised to use GetApplications instead of this endpoint, as this one now exists for backwards  compatibility.  This endpoint returns very limited data about **all** applications in a Realm and is not  paginated.  Because of this, this endpoint can run into issues and have very slow performance when attempting to  pull data for accounts with many applications.  The GetApplications endpoint alleviates this problem by using pagination to return a limited amount of applications at once, while also providing much more detail about every  application present in a Realm.  >**Note:** >Each Realm has a special application called the **Application Management Application**.  When using this special application's credentials to authenticate with the API, you are able to perform actions on all the other applications within that Realm (and only those actions, this isn't a general purpose credential).  You can list, add, update, and delete both applications and credentials with this API resource. 
      * @param {module:rustici-software-cloud-v2/rustici-software-cloud-v2-api/ApplicationManagementApi~getApplicationListCallback} callback The callback function, accepting three arguments: error, data, response
      * data is of type: {@link module:rustici-software-cloud-v2/rustici-software-cloud-v2-model/ApplicationListSchema}
+     * @deprecated Use GetApplications instead.
      */
     this.getApplicationList = function(callback) {
       var postBody = null;
@@ -488,6 +488,69 @@
 
       return this.apiClient.callApi(
         '/appManagement/applications', 'GET',
+        pathParams, queryParams, collectionQueryParams, headerParams, formParams, postBody,
+        authNames, contentTypes, accepts, returnType, callback
+      );
+    }
+
+    /**
+     * Callback function to receive the result of the getApplications operation.
+     * @callback module:rustici-software-cloud-v2/rustici-software-cloud-v2-api/ApplicationManagementApi~getApplicationsCallback
+     * @param {String} error Error message, if any.
+     * @param {module:rustici-software-cloud-v2/rustici-software-cloud-v2-model/ApplicationInfoListSchema} data The data returned by the service call.
+     * @param {String} response The complete HTTP response.
+     */
+
+    /**
+     * Use the Application Management App to get a detailed list of Applications 
+     * Returns a list of applications. Can be filtered using the request parameters to provide a subset of results.  This endpoint caches the course and registration counts of an application for 24 hours if either  `includeCourseCount` or `includeRegistrationCount` parameters, respectively, are set to `true`. Since these values are cached for an extended period, any changes made to the number of courses or  registrations in an application will not be reflected in the results of this endpoint until the caching period has passed.  >**Note:** >This request is paginated and will only provide a limited amount of resources at a time. If there are more results to be collected, a `more` token provided with the response which can be passed to get the next page of results. When passing this token, no other filter parameters can be sent as part of the request. The resources will continue to respect the filters passed in by the original request.  >**Note:** >Each Realm has a special application called the **Application Management Application**.  When using this special application's credentials to authenticate with the API, you are able to perform actions on all the other applications within that Realm (and only those actions, this isn't a general purpose credential).  You can list, add, update, and delete both applications and credentials with this API resource.  >**Info:** >If you want to get an up-to-date value of the course or registration count for a single application within the caching period, use the GetApplicationInfo endpoint with `includeCourseCount` and/or `includeRegistrationCount` set to `true`.  GetApplicationInfo *always* gathers the most up-to-date values and overwrites them in the cache, resetting the caching period for that application. 
+     * @param {Object} opts Optional parameters
+     * @param {Date} opts.since Filter by ISO 8601 TimeStamp inclusive (defaults to UTC)
+     * @param {Date} opts.until Filter by ISO 8601 TimeStamp inclusive (defaults to UTC)
+     * @param {module:rustici-software-cloud-v2/rustici-software-cloud-v2-model/String} opts.datetimeFilter Specifies field that `since` and `until` parameters are applied against (default to updated)
+     * @param {String} opts.filter Optional string which filters results by a specified field (described by filterBy).
+     * @param {module:rustici-software-cloud-v2/rustici-software-cloud-v2-model/String} opts.filterBy Optional enum parameter for specifying the field on which to run the filter.  (default to app_id)
+     * @param {module:rustici-software-cloud-v2/rustici-software-cloud-v2-model/String} opts.orderBy Optional enum parameter for specifying the field and order by which to sort the results.  (default to updated_asc)
+     * @param {String} opts.more Pagination token returned as `more` property of multi page list requests
+     * @param {Boolean} opts.includeCourseCount Include a count of courses for the application. (default to false)
+     * @param {Boolean} opts.includeRegistrationCount Include a count of registrations created for the application during the current billing period. (default to false)
+     * @param {Boolean} opts.includeTotalCount Include the total count of results matching the provided filters as a header on the initial request.  The header will not be present on subsequent requests resulting from passing the `more` token.  (default to false)
+     * @param {module:rustici-software-cloud-v2/rustici-software-cloud-v2-api/ApplicationManagementApi~getApplicationsCallback} callback The callback function, accepting three arguments: error, data, response
+     * data is of type: {@link module:rustici-software-cloud-v2/rustici-software-cloud-v2-model/ApplicationInfoListSchema}
+     */
+    this.getApplications = function(opts, callback) {
+      opts = opts || {};
+      var postBody = null;
+
+
+      var pathParams = {
+      };
+      var queryParams = {
+        'since': opts['since'],
+        'until': opts['until'],
+        'datetimeFilter': opts['datetimeFilter'],
+        'filter': opts['filter'],
+        'filterBy': opts['filterBy'],
+        'orderBy': opts['orderBy'],
+        'more': opts['more'],
+        'includeCourseCount': opts['includeCourseCount'],
+        'includeRegistrationCount': opts['includeRegistrationCount'],
+        'includeTotalCount': opts['includeTotalCount'],
+      };
+      var collectionQueryParams = {
+      };
+      var headerParams = {
+      };
+      var formParams = {
+      };
+
+      var authNames = ['APP_MANAGEMENT', 'OAUTH'];
+      var contentTypes = ['application/json'];
+      var accepts = ['application/json'];
+      var returnType = ApplicationInfoListSchema;
+
+      return this.apiClient.callApi(
+        '/appManagement/applicationList', 'GET',
         pathParams, queryParams, collectionQueryParams, headerParams, formParams, postBody,
         authNames, contentTypes, accepts, returnType, callback
       );

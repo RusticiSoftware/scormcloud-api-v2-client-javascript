@@ -33,7 +33,6 @@
   /**
    * The ReportageAccountInfoSchema model module.
    * @module rustici-software-cloud-v2/rustici-software-cloud-v2-model/ReportageAccountInfoSchema
-   * @version 2.1.0
    */
 
   /**

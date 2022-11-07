@@ -33,7 +33,6 @@
   /**
    * The XapiScore model module.
    * @module rustici-software-cloud-v2/rustici-software-cloud-v2-model/XapiScore
-   * @version 2.1.0
    */
 
   /**

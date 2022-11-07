@@ -33,7 +33,6 @@
   /**
    * The ActivityResultSchema model module.
    * @module rustici-software-cloud-v2/rustici-software-cloud-v2-model/ActivityResultSchema
-   * @version 2.1.0
    */
 
   /**

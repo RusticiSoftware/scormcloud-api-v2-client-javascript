@@ -33,7 +33,6 @@
   /**
    * The SettingsIndividualSchema model module.
    * @module rustici-software-cloud-v2/rustici-software-cloud-v2-model/SettingsIndividualSchema
-   * @version 2.1.0
    */
 
   /**

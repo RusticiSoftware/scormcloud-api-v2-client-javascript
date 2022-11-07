@@ -33,7 +33,6 @@
   /**
    * The DispatchRegistrationCountSchema model module.
    * @module rustici-software-cloud-v2/rustici-software-cloud-v2-model/DispatchRegistrationCountSchema
-   * @version 2.1.0
    */
 
   /**

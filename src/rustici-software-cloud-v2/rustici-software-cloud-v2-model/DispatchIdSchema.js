@@ -33,7 +33,6 @@
   /**
    * The DispatchIdSchema model module.
    * @module rustici-software-cloud-v2/rustici-software-cloud-v2-model/DispatchIdSchema
-   * @version 2.1.0
    */
 
   /**

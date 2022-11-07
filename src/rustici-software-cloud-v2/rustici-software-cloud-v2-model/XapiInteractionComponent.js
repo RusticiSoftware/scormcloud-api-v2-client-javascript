@@ -33,7 +33,6 @@
   /**
    * The XapiInteractionComponent model module.
    * @module rustici-software-cloud-v2/rustici-software-cloud-v2-model/XapiInteractionComponent
-   * @version 2.1.0
    */
 
   /**

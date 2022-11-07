@@ -33,7 +33,6 @@
   /**
    * The LaunchLinkRequestSchema model module.
    * @module rustici-software-cloud-v2/rustici-software-cloud-v2-model/LaunchLinkRequestSchema
-   * @version 2.1.0
    */
 
   /**

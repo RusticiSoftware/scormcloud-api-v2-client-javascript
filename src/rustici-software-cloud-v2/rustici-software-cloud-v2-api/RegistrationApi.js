@@ -33,7 +33,6 @@
   /**
    * Registration service.
    * @module rustici-software-cloud-v2/rustici-software-cloud-v2-api/RegistrationApi
-   * @version 2.1.0
    */
 
   /**
@@ -1203,6 +1202,7 @@
      * @param {Boolean} opts.includeChildResults Include information about each learning object, not just the top level in the results (default to false)
      * @param {Boolean} opts.includeInteractionsAndObjectives Include interactions and objectives in the results (default to false)
      * @param {Boolean} opts.includeRuntime Include runtime details in the results (default to false)
+     * @param {Boolean} opts.includeTotalCount Include the total count of results matching the provided filters as a header on the initial request.  The header will not be present on subsequent requests resulting from passing the `more` token.  (default to false)
      * @param {module:rustici-software-cloud-v2/rustici-software-cloud-v2-api/RegistrationApi~getRegistrationsCallback} callback The callback function, accepting three arguments: error, data, response
      * data is of type: {@link module:rustici-software-cloud-v2/rustici-software-cloud-v2-model/RegistrationListSchema}
      */
@@ -1226,6 +1226,7 @@
         'includeChildResults': opts['includeChildResults'],
         'includeInteractionsAndObjectives': opts['includeInteractionsAndObjectives'],
         'includeRuntime': opts['includeRuntime'],
+        'includeTotalCount': opts['includeTotalCount'],
       };
       var collectionQueryParams = {
         'tags': {

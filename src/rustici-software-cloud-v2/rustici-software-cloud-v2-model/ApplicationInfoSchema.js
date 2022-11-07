@@ -33,7 +33,6 @@
   /**
    * The ApplicationInfoSchema model module.
    * @module rustici-software-cloud-v2/rustici-software-cloud-v2-model/ApplicationInfoSchema
-   * @version 2.1.0
    */
 
   /**
@@ -60,6 +59,8 @@
         obj.name = ApiClient.convertToType(data['name'], 'String');
       if (data.hasOwnProperty('createDate'))
         obj.createDate = ApiClient.convertToType(data['createDate'], 'Date');
+      if (data.hasOwnProperty('updateDate'))
+        obj.updateDate = ApiClient.convertToType(data['updateDate'], 'Date');
       if (data.hasOwnProperty('allowDelete'))
         obj.allowDelete = ApiClient.convertToType(data['allowDelete'], 'Boolean');
       if (data.hasOwnProperty('courseCount'))
@@ -87,6 +88,12 @@
    * @member {Date} createDate
    */
   exports.prototype.createDate = undefined;
+
+  /**
+   * The time the application was last updated in UTC
+   * @member {Date} updateDate
+   */
+  exports.prototype.updateDate = undefined;
 
   /**
    * Whether the application is allowed to perform delete operations

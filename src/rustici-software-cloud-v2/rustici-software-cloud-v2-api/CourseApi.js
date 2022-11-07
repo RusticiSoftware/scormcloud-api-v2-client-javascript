@@ -33,7 +33,6 @@
   /**
    * Course service.
    * @module rustici-software-cloud-v2/rustici-software-cloud-v2-api/CourseApi
-   * @version 2.1.0
    */
 
   /**
@@ -1471,6 +1470,7 @@
      * @param {String} opts.more Pagination token returned as `more` property of multi page list requests
      * @param {Boolean} opts.includeCourseMetadata Include course metadata in the results. If the course has no metadata, adding this parameter has no effect. (default to false)
      * @param {Boolean} opts.includeRegistrationCount Include the registration count in the results (default to false)
+     * @param {Boolean} opts.includeTotalCount Include the total count of results matching the provided filters as a header on the initial request.  The header will not be present on subsequent requests resulting from passing the `more` token.  (default to false)
      * @param {module:rustici-software-cloud-v2/rustici-software-cloud-v2-api/CourseApi~getCoursesCallback} callback The callback function, accepting three arguments: error, data, response
      * data is of type: {@link module:rustici-software-cloud-v2/rustici-software-cloud-v2-model/CourseListSchema}
      */
@@ -1491,6 +1491,7 @@
         'more': opts['more'],
         'includeCourseMetadata': opts['includeCourseMetadata'],
         'includeRegistrationCount': opts['includeRegistrationCount'],
+        'includeTotalCount': opts['includeTotalCount'],
       };
       var collectionQueryParams = {
         'tags': {

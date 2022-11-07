@@ -33,7 +33,6 @@
   /**
    * The MetadataSchema model module.
    * @module rustici-software-cloud-v2/rustici-software-cloud-v2-model/MetadataSchema
-   * @version 2.1.0
    */
 
   /**

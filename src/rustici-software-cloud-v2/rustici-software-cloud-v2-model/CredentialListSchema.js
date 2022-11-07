@@ -33,7 +33,6 @@
   /**
    * The CredentialListSchema model module.
    * @module rustici-software-cloud-v2/rustici-software-cloud-v2-model/CredentialListSchema
-   * @version 2.1.0
    */
 
   /**

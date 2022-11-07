@@ -25,51 +25,45 @@
     if (!root.RusticiSoftwareCloudV2) {
       root.RusticiSoftwareCloudV2 = {};
     }
-    root.RusticiSoftwareCloudV2.AboutSchema = factory(root.RusticiSoftwareCloudV2.ApiClient);
+    root.RusticiSoftwareCloudV2.PaginatedList = factory(root.RusticiSoftwareCloudV2.ApiClient);
   }
 }(this, function(ApiClient) {
   'use strict';
 
   /**
-   * The AboutSchema model module.
-   * @module rustici-software-cloud-v2/rustici-software-cloud-v2-model/AboutSchema
+   * The PaginatedList model module.
+   * @module rustici-software-cloud-v2/rustici-software-cloud-v2-model/PaginatedList
    */
 
   /**
-   * Constructs a new <code>AboutSchema</code>.
-   * @alias module:rustici-software-cloud-v2/rustici-software-cloud-v2-model/AboutSchema
+   * Constructs a new <code>PaginatedList</code>.
+   * @alias module:rustici-software-cloud-v2/rustici-software-cloud-v2-model/PaginatedList
    * @class
    */
   var exports = function() {
   };
 
   /**
-   * Constructs a <code>AboutSchema</code> from a plain JavaScript object, optionally creating a new instance.
+   * Constructs a <code>PaginatedList</code> from a plain JavaScript object, optionally creating a new instance.
    * Copies all relevant properties from <code>data</code> to <code>obj</code> if supplied or a new instance if not.
    * @param {Object} data The plain JavaScript object bearing properties of interest.
-   * @param {module:rustici-software-cloud-v2/rustici-software-cloud-v2-model/AboutSchema} obj Optional instance to populate.
-   * @return {module:rustici-software-cloud-v2/rustici-software-cloud-v2-model/AboutSchema} The populated <code>AboutSchema</code> instance.
+   * @param {module:rustici-software-cloud-v2/rustici-software-cloud-v2-model/PaginatedList} obj Optional instance to populate.
+   * @return {module:rustici-software-cloud-v2/rustici-software-cloud-v2-model/PaginatedList} The populated <code>PaginatedList</code> instance.
    */
   exports.constructFromObject = function(data, obj) {
     if (data) {
       obj = obj || new exports();
-      if (data.hasOwnProperty('version'))
-        obj.version = ApiClient.convertToType(data['version'], 'String');
-      if (data.hasOwnProperty('distribution'))
-        obj.distribution = ApiClient.convertToType(data['distribution'], 'String');
+      if (data.hasOwnProperty('more'))
+        obj.more = ApiClient.convertToType(data['more'], 'String');
     }
     return obj;
   }
 
   /**
-   * @member {String} version
+   * Token for getting the next set of results, from the prior set of results.
+   * @member {String} more
    */
-  exports.prototype.version = undefined;
-
-  /**
-   * @member {String} distribution
-   */
-  exports.prototype.distribution = undefined;
+  exports.prototype.more = undefined;
 
 
   return exports;

@@ -16,32 +16,33 @@
 (function(root, factory) {
   if (typeof define === 'function' && define.amd) {
     // AMD. Register as an anonymous module.
-    define(['rustici-software-cloud-v2/ApiClient', 'rustici-software-cloud-v2/rustici-software-cloud-v2-model/PrivateInvitationSchema'], factory);
+    define(['rustici-software-cloud-v2/ApiClient', 'rustici-software-cloud-v2/rustici-software-cloud-v2-model/PaginatedList', 'rustici-software-cloud-v2/rustici-software-cloud-v2-model/PrivateInvitationSchema'], factory);
   } else if (typeof module === 'object' && module.exports) {
     // CommonJS-like environments that support module.exports, like Node.
-    module.exports = factory(require('../ApiClient'), require('./PrivateInvitationSchema'));
+    module.exports = factory(require('../ApiClient'), require('./PaginatedList'), require('./PrivateInvitationSchema'));
   } else {
     // Browser globals (root is window)
     if (!root.RusticiSoftwareCloudV2) {
       root.RusticiSoftwareCloudV2 = {};
     }
-    root.RusticiSoftwareCloudV2.PrivateInvitationList = factory(root.RusticiSoftwareCloudV2.ApiClient, root.RusticiSoftwareCloudV2.PrivateInvitationSchema);
+    root.RusticiSoftwareCloudV2.PrivateInvitationList = factory(root.RusticiSoftwareCloudV2.ApiClient, root.RusticiSoftwareCloudV2.PaginatedList, root.RusticiSoftwareCloudV2.PrivateInvitationSchema);
   }
-}(this, function(ApiClient, PrivateInvitationSchema) {
+}(this, function(ApiClient, PaginatedList, PrivateInvitationSchema) {
   'use strict';
 
   /**
    * The PrivateInvitationList model module.
    * @module rustici-software-cloud-v2/rustici-software-cloud-v2-model/PrivateInvitationList
-   * @version 2.1.0
    */
 
   /**
    * Constructs a new <code>PrivateInvitationList</code>.
    * @alias module:rustici-software-cloud-v2/rustici-software-cloud-v2-model/PrivateInvitationList
    * @class
+   * @extends module:rustici-software-cloud-v2/rustici-software-cloud-v2-model/PaginatedList
    */
   var exports = function() {
+    PaginatedList.call(this);
   };
 
   /**
@@ -54,25 +55,20 @@
   exports.constructFromObject = function(data, obj) {
     if (data) {
       obj = obj || new exports();
+      PaginatedList.constructFromObject(data, obj);
       if (data.hasOwnProperty('invitations'))
         obj.invitations = ApiClient.convertToType(data['invitations'], [PrivateInvitationSchema]);
-      if (data.hasOwnProperty('more'))
-        obj.more = ApiClient.convertToType(data['more'], 'String');
     }
     return obj;
   }
 
+  exports.prototype = Object.create(PaginatedList.prototype);
+  exports.prototype.constructor = exports;
   /**
    * A list of private invitation objects.
    * @member {Array.<module:rustici-software-cloud-v2/rustici-software-cloud-v2-model/PrivateInvitationSchema>} invitations
    */
   exports.prototype.invitations = undefined;
-
-  /**
-   * Token for getting the next set of results, from the prior set of results.
-   * @member {String} more
-   */
-  exports.prototype.more = undefined;
 
 
   return exports;

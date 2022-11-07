@@ -33,7 +33,6 @@
   /**
    * The CredentialRequestSchema model module.
    * @module rustici-software-cloud-v2/rustici-software-cloud-v2-model/CredentialRequestSchema
-   * @version 2.1.0
    */
 
   /**

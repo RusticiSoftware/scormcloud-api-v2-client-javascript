@@ -33,7 +33,6 @@
   /**
    * Learner service.
    * @module rustici-software-cloud-v2/rustici-software-cloud-v2-api/LearnerApi
-   * @version 2.1.0
    */
 
   /**
