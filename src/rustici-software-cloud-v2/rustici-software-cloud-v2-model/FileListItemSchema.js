@@ -33,7 +33,6 @@
   /**
    * The FileListItemSchema model module.
    * @module rustici-software-cloud-v2/rustici-software-cloud-v2-model/FileListItemSchema
-   * @version 2.1.0
    */
 
   /**

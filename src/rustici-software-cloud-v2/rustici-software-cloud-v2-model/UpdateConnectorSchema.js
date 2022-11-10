@@ -33,7 +33,6 @@
   /**
    * The UpdateConnectorSchema model module.
    * @module rustici-software-cloud-v2/rustici-software-cloud-v2-model/UpdateConnectorSchema
-   * @version 2.1.0
    */
 
   /**

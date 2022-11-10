@@ -16,32 +16,33 @@
 (function(root, factory) {
   if (typeof define === 'function' && define.amd) {
     // AMD. Register as an anonymous module.
-    define(['rustici-software-cloud-v2/ApiClient', 'rustici-software-cloud-v2/rustici-software-cloud-v2-model/UserInvitationSchema'], factory);
+    define(['rustici-software-cloud-v2/ApiClient', 'rustici-software-cloud-v2/rustici-software-cloud-v2-model/PaginatedList', 'rustici-software-cloud-v2/rustici-software-cloud-v2-model/UserInvitationSchema'], factory);
   } else if (typeof module === 'object' && module.exports) {
     // CommonJS-like environments that support module.exports, like Node.
-    module.exports = factory(require('../ApiClient'), require('./UserInvitationSchema'));
+    module.exports = factory(require('../ApiClient'), require('./PaginatedList'), require('./UserInvitationSchema'));
   } else {
     // Browser globals (root is window)
     if (!root.RusticiSoftwareCloudV2) {
       root.RusticiSoftwareCloudV2 = {};
     }
-    root.RusticiSoftwareCloudV2.UserInvitationList = factory(root.RusticiSoftwareCloudV2.ApiClient, root.RusticiSoftwareCloudV2.UserInvitationSchema);
+    root.RusticiSoftwareCloudV2.UserInvitationList = factory(root.RusticiSoftwareCloudV2.ApiClient, root.RusticiSoftwareCloudV2.PaginatedList, root.RusticiSoftwareCloudV2.UserInvitationSchema);
   }
-}(this, function(ApiClient, UserInvitationSchema) {
+}(this, function(ApiClient, PaginatedList, UserInvitationSchema) {
   'use strict';
 
   /**
    * The UserInvitationList model module.
    * @module rustici-software-cloud-v2/rustici-software-cloud-v2-model/UserInvitationList
-   * @version 2.1.0
    */
 
   /**
    * Constructs a new <code>UserInvitationList</code>.
    * @alias module:rustici-software-cloud-v2/rustici-software-cloud-v2-model/UserInvitationList
    * @class
+   * @extends module:rustici-software-cloud-v2/rustici-software-cloud-v2-model/PaginatedList
    */
   var exports = function() {
+    PaginatedList.call(this);
   };
 
   /**
@@ -54,25 +55,20 @@
   exports.constructFromObject = function(data, obj) {
     if (data) {
       obj = obj || new exports();
+      PaginatedList.constructFromObject(data, obj);
       if (data.hasOwnProperty('userInvitations'))
         obj.userInvitations = ApiClient.convertToType(data['userInvitations'], [UserInvitationSchema]);
-      if (data.hasOwnProperty('more'))
-        obj.more = ApiClient.convertToType(data['more'], 'String');
     }
     return obj;
   }
 
+  exports.prototype = Object.create(PaginatedList.prototype);
+  exports.prototype.constructor = exports;
   /**
    * A list of user invitation objects.
    * @member {Array.<module:rustici-software-cloud-v2/rustici-software-cloud-v2-model/UserInvitationSchema>} userInvitations
    */
   exports.prototype.userInvitations = undefined;
-
-  /**
-   * Token for getting the next set of results, from the prior set of results.
-   * @member {String} more
-   */
-  exports.prototype.more = undefined;
 
 
   return exports;

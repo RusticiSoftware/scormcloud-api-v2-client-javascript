@@ -33,7 +33,6 @@
   /**
    * The InvitationSummarySchema model module.
    * @module rustici-software-cloud-v2/rustici-software-cloud-v2-model/InvitationSummarySchema
-   * @version 2.1.0
    */
 
   /**

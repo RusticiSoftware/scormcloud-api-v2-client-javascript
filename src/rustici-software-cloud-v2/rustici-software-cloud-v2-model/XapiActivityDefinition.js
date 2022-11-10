@@ -33,7 +33,6 @@
   /**
    * The XapiActivityDefinition model module.
    * @module rustici-software-cloud-v2/rustici-software-cloud-v2-model/XapiActivityDefinition
-   * @version 2.1.0
    */
 
   /**

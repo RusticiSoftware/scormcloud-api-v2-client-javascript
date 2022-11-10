@@ -33,7 +33,6 @@
   /**
    * The XapiContextActivity model module.
    * @module rustici-software-cloud-v2/rustici-software-cloud-v2-model/XapiContextActivity
-   * @version 2.1.0
    */
 
   /**

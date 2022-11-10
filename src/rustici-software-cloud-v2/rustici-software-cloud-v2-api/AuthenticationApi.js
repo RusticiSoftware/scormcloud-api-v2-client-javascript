@@ -33,7 +33,6 @@
   /**
    * Authentication service.
    * @module rustici-software-cloud-v2/rustici-software-cloud-v2-api/AuthenticationApi
-   * @version 2.1.0
    */
 
   /**

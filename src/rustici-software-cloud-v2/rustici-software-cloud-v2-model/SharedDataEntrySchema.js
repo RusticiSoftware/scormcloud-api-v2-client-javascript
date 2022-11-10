@@ -33,7 +33,6 @@
   /**
    * The SharedDataEntrySchema model module.
    * @module rustici-software-cloud-v2/rustici-software-cloud-v2-model/SharedDataEntrySchema
-   * @version 2.1.0
    */
 
   /**

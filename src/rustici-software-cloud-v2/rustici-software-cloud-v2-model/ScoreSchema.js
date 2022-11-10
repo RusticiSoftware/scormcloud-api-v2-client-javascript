@@ -33,7 +33,6 @@
   /**
    * The ScoreSchema model module.
    * @module rustici-software-cloud-v2/rustici-software-cloud-v2-model/ScoreSchema
-   * @version 2.1.0
    */
 
   /**

@@ -33,7 +33,6 @@
   /**
    * The LaunchAuthSchema model module.
    * @module rustici-software-cloud-v2/rustici-software-cloud-v2-model/LaunchAuthSchema
-   * @version 2.1.0
    */
 
   /**

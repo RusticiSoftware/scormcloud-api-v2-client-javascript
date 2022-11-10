@@ -33,7 +33,6 @@
   /**
    * The XapiStatementPipeListSchema model module.
    * @module rustici-software-cloud-v2/rustici-software-cloud-v2-model/XapiStatementPipeListSchema
-   * @version 2.1.0
    */
 
   /**

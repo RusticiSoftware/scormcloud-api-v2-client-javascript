@@ -33,7 +33,6 @@
   /**
    * The CourseSchema model module.
    * @module rustici-software-cloud-v2/rustici-software-cloud-v2-model/CourseSchema
-   * @version 2.1.0
    */
 
   /**

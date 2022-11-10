@@ -33,7 +33,6 @@
   /**
    * The LearnerPreferenceSchema model module.
    * @module rustici-software-cloud-v2/rustici-software-cloud-v2-model/LearnerPreferenceSchema
-   * @version 2.1.0
    */
 
   /**

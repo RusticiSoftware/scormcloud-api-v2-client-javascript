@@ -33,7 +33,6 @@
   /**
    * The StaticPropertiesSchema model module.
    * @module rustici-software-cloud-v2/rustici-software-cloud-v2-model/StaticPropertiesSchema
-   * @version 2.1.0
    */
 
   /**

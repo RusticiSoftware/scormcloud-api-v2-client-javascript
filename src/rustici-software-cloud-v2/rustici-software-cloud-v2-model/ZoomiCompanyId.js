@@ -33,7 +33,6 @@
   /**
    * The ZoomiCompanyId model module.
    * @module rustici-software-cloud-v2/rustici-software-cloud-v2-model/ZoomiCompanyId
-   * @version 2.1.0
    */
 
   /**

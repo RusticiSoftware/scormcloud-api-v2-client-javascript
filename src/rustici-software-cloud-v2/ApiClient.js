@@ -32,7 +32,7 @@
 
   /**
    * @module rustici-software-cloud-v2/ApiClient
-   * @version 2.1.0
+   * @version 3.0.0
    */
 
   /**
@@ -57,8 +57,7 @@
     this.authentications = {
       'APP_MANAGEMENT': {type: 'basic'},
       'APP_NORMAL': {type: 'basic'},
-      'OAUTH': {type: 'oauth2'},
-      'UNSECURED': {type: 'basic'}
+      'OAUTH': {type: 'oauth2'}
     };
     /**
      * The default HTTP headers to be included for all API calls.

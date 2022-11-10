@@ -33,7 +33,6 @@
   /**
    * The XapiEndpointSchema model module.
    * @module rustici-software-cloud-v2/rustici-software-cloud-v2-model/XapiEndpointSchema
-   * @version 2.1.0
    */
 
   /**

@@ -33,7 +33,6 @@
   /**
    * The TitleSchema model module.
    * @module rustici-software-cloud-v2/rustici-software-cloud-v2-model/TitleSchema
-   * @version 2.1.0
    */
 
   /**

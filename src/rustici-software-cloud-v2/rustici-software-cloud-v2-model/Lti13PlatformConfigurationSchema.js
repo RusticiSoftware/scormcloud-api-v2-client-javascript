@@ -33,7 +33,6 @@
   /**
    * The Lti13PlatformConfigurationSchema model module.
    * @module rustici-software-cloud-v2/rustici-software-cloud-v2-model/Lti13PlatformConfigurationSchema
-   * @version 2.1.0
    */
 
   /**

@@ -33,7 +33,6 @@
   /**
    * The ApplicationSchema model module.
    * @module rustici-software-cloud-v2/rustici-software-cloud-v2-model/ApplicationSchema
-   * @version 2.1.0
    */
 
   /**

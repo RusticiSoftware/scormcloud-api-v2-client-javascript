@@ -33,7 +33,6 @@
   /**
    * Invitations service.
    * @module rustici-software-cloud-v2/rustici-software-cloud-v2-api/InvitationsApi
-   * @version 2.1.0
    */
 
   /**
@@ -215,6 +214,7 @@
      * @param {module:rustici-software-cloud-v2/rustici-software-cloud-v2-model/String} opts.filterBy Optional enum parameter for specifying the field on which to run the filter.  (default to invitation_id)
      * @param {module:rustici-software-cloud-v2/rustici-software-cloud-v2-model/String} opts.orderBy Optional enum parameter for specifying the field and order by which to sort the results.  (default to updated_asc)
      * @param {String} opts.more Pagination token returned as `more` property of multi page list requests
+     * @param {Boolean} opts.includeTotalCount Include the total count of results matching the provided filters as a header on the initial request.  The header will not be present on subsequent requests resulting from passing the `more` token.  (default to false)
      * @param {module:rustici-software-cloud-v2/rustici-software-cloud-v2-api/InvitationsApi~getAllInvitationsCallback} callback The callback function, accepting three arguments: error, data, response
      * data is of type: {@link module:rustici-software-cloud-v2/rustici-software-cloud-v2-model/InvitationSummaryList}
      */
@@ -234,6 +234,7 @@
         'filterBy': opts['filterBy'],
         'orderBy': opts['orderBy'],
         'more': opts['more'],
+        'includeTotalCount': opts['includeTotalCount'],
       };
       var collectionQueryParams = {
         'tags': {
@@ -427,6 +428,7 @@
      * @param {module:rustici-software-cloud-v2/rustici-software-cloud-v2-model/String} opts.filterBy Optional enum parameter for specifying the field on which to run the filter.  (default to invitation_id)
      * @param {module:rustici-software-cloud-v2/rustici-software-cloud-v2-model/String} opts.orderBy Optional enum parameter for specifying the field and order by which to sort the results.  (default to updated_asc)
      * @param {String} opts.more Pagination token returned as `more` property of multi page list requests
+     * @param {Boolean} opts.includeTotalCount Include the total count of results matching the provided filters as a header on the initial request.  The header will not be present on subsequent requests resulting from passing the `more` token.  (default to false)
      * @param {module:rustici-software-cloud-v2/rustici-software-cloud-v2-api/InvitationsApi~getPrivateInvitationsCallback} callback The callback function, accepting three arguments: error, data, response
      * data is of type: {@link module:rustici-software-cloud-v2/rustici-software-cloud-v2-model/PrivateInvitationList}
      */
@@ -446,6 +448,7 @@
         'filterBy': opts['filterBy'],
         'orderBy': opts['orderBy'],
         'more': opts['more'],
+        'includeTotalCount': opts['includeTotalCount'],
       };
       var collectionQueryParams = {
         'tags': {
@@ -491,6 +494,7 @@
      * @param {module:rustici-software-cloud-v2/rustici-software-cloud-v2-model/String} opts.orderBy Optional enum parameter for specifying the field and order by which to sort the results.  (default to updated_asc)
      * @param {String} opts.more Pagination token returned as `more` property of multi page list requests
      * @param {Boolean} opts.includeRegistrationReport Optional flag to include basic registration information
+     * @param {Boolean} opts.includeTotalCount Include the total count of results matching the provided filters as a header on the initial request.  The header will not be present on subsequent requests resulting from passing the `more` token.  (default to false)
      * @param {module:rustici-software-cloud-v2/rustici-software-cloud-v2-api/InvitationsApi~getPrivateUserInvitationsCallback} callback The callback function, accepting three arguments: error, data, response
      * data is of type: {@link module:rustici-software-cloud-v2/rustici-software-cloud-v2-model/UserInvitationList}
      */
@@ -516,6 +520,7 @@
         'orderBy': opts['orderBy'],
         'more': opts['more'],
         'includeRegistrationReport': opts['includeRegistrationReport'],
+        'includeTotalCount': opts['includeTotalCount'],
       };
       var collectionQueryParams = {
       };
@@ -609,6 +614,7 @@
      * @param {module:rustici-software-cloud-v2/rustici-software-cloud-v2-model/String} opts.filterBy Optional enum parameter for specifying the field on which to run the filter.  (default to invitation_id)
      * @param {module:rustici-software-cloud-v2/rustici-software-cloud-v2-model/String} opts.orderBy Optional enum parameter for specifying the field and order by which to sort the results.  (default to updated_asc)
      * @param {String} opts.more Pagination token returned as `more` property of multi page list requests
+     * @param {Boolean} opts.includeTotalCount Include the total count of results matching the provided filters as a header on the initial request.  The header will not be present on subsequent requests resulting from passing the `more` token.  (default to false)
      * @param {module:rustici-software-cloud-v2/rustici-software-cloud-v2-api/InvitationsApi~getPublicInvitationsCallback} callback The callback function, accepting three arguments: error, data, response
      * data is of type: {@link module:rustici-software-cloud-v2/rustici-software-cloud-v2-model/PublicInvitationList}
      */
@@ -628,6 +634,7 @@
         'filterBy': opts['filterBy'],
         'orderBy': opts['orderBy'],
         'more': opts['more'],
+        'includeTotalCount': opts['includeTotalCount'],
       };
       var collectionQueryParams = {
         'tags': {
@@ -673,6 +680,7 @@
      * @param {module:rustici-software-cloud-v2/rustici-software-cloud-v2-model/String} opts.orderBy Optional enum parameter for specifying the field and order by which to sort the results.  (default to updated_asc)
      * @param {String} opts.more Pagination token returned as `more` property of multi page list requests
      * @param {Boolean} opts.includeRegistrationReport Optional flag to include basic registration information
+     * @param {Boolean} opts.includeTotalCount Include the total count of results matching the provided filters as a header on the initial request.  The header will not be present on subsequent requests resulting from passing the `more` token.  (default to false)
      * @param {module:rustici-software-cloud-v2/rustici-software-cloud-v2-api/InvitationsApi~getPublicUserInvitationsCallback} callback The callback function, accepting three arguments: error, data, response
      * data is of type: {@link module:rustici-software-cloud-v2/rustici-software-cloud-v2-model/UserInvitationList}
      */
@@ -698,6 +706,7 @@
         'orderBy': opts['orderBy'],
         'more': opts['more'],
         'includeRegistrationReport': opts['includeRegistrationReport'],
+        'includeTotalCount': opts['includeTotalCount'],
       };
       var collectionQueryParams = {
       };

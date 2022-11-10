@@ -33,7 +33,6 @@
   /**
    * ContentConnectors service.
    * @module rustici-software-cloud-v2/rustici-software-cloud-v2-api/ContentConnectorsApi
-   * @version 2.1.0
    */
 
   /**

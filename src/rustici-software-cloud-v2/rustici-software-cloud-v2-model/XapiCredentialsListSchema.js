@@ -33,7 +33,6 @@
   /**
    * The XapiCredentialsListSchema model module.
    * @module rustici-software-cloud-v2/rustici-software-cloud-v2-model/XapiCredentialsListSchema
-   * @version 2.1.0
    */
 
   /**

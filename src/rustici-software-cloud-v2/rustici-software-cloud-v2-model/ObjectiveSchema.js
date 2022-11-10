@@ -33,7 +33,6 @@
   /**
    * The ObjectiveSchema model module.
    * @module rustici-software-cloud-v2/rustici-software-cloud-v2-model/ObjectiveSchema
-   * @version 2.1.0
    */
 
   /**

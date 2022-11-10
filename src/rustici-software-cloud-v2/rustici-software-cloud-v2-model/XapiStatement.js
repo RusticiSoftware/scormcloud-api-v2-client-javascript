@@ -33,7 +33,6 @@
   /**
    * The XapiStatement model module.
    * @module rustici-software-cloud-v2/rustici-software-cloud-v2-model/XapiStatement
-   * @version 2.1.0
    */
 
   /**

@@ -33,7 +33,6 @@
   /**
    * The RuntimeSchema model module.
    * @module rustici-software-cloud-v2/rustici-software-cloud-v2-model/RuntimeSchema
-   * @version 2.1.0
    */
 
   /**

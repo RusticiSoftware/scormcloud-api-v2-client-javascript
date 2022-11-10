@@ -33,7 +33,6 @@
   /**
    * The CompletionAmountSchema model module.
    * @module rustici-software-cloud-v2/rustici-software-cloud-v2-model/CompletionAmountSchema
-   * @version 2.1.0
    */
 
   /**

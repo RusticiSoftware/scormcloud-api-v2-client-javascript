@@ -33,7 +33,6 @@
   /**
    * Dispatch service.
    * @module rustici-software-cloud-v2/rustici-software-cloud-v2-api/DispatchApi
-   * @version 2.1.0
    */
 
   /**
@@ -722,6 +721,7 @@
      * @param {module:rustici-software-cloud-v2/rustici-software-cloud-v2-model/String} opts.filterBy Optional enum parameter for specifying the field on which to run the filter.  (default to dispatch_id)
      * @param {module:rustici-software-cloud-v2/rustici-software-cloud-v2-model/String} opts.orderBy Optional enum parameter for specifying the field and order by which to sort the results.  (default to updated_asc)
      * @param {String} opts.more Pagination token returned as `more` property of multi page list requests
+     * @param {Boolean} opts.includeTotalCount Include the total count of results matching the provided filters as a header on the initial request.  The header will not be present on subsequent requests resulting from passing the `more` token.  (default to false)
      * @param {module:rustici-software-cloud-v2/rustici-software-cloud-v2-api/DispatchApi~getDestinationDispatchesCallback} callback The callback function, accepting three arguments: error, data, response
      * data is of type: {@link module:rustici-software-cloud-v2/rustici-software-cloud-v2-model/DispatchListSchema}
      */
@@ -747,6 +747,7 @@
         'filterBy': opts['filterBy'],
         'orderBy': opts['orderBy'],
         'more': opts['more'],
+        'includeTotalCount': opts['includeTotalCount'],
       };
       var collectionQueryParams = {
         'tags': {
@@ -888,6 +889,7 @@
      * @param {module:rustici-software-cloud-v2/rustici-software-cloud-v2-model/String} opts.filterBy Optional enum parameter for specifying the field on which to run the filter.  (default to destination_id)
      * @param {module:rustici-software-cloud-v2/rustici-software-cloud-v2-model/String} opts.orderBy Optional enum parameter for specifying the field and order by which to sort the results.  (default to updated_asc)
      * @param {String} opts.more Pagination token returned as `more` property of multi page list requests
+     * @param {Boolean} opts.includeTotalCount Include the total count of results matching the provided filters as a header on the initial request.  The header will not be present on subsequent requests resulting from passing the `more` token.  (default to false)
      * @param {module:rustici-software-cloud-v2/rustici-software-cloud-v2-api/DispatchApi~getDestinationsCallback} callback The callback function, accepting three arguments: error, data, response
      * data is of type: {@link module:rustici-software-cloud-v2/rustici-software-cloud-v2-model/DestinationListSchema}
      */
@@ -907,6 +909,7 @@
         'filterBy': opts['filterBy'],
         'orderBy': opts['orderBy'],
         'more': opts['more'],
+        'includeTotalCount': opts['includeTotalCount'],
       };
       var collectionQueryParams = {
         'tags': {
@@ -1246,6 +1249,7 @@
      * @param {module:rustici-software-cloud-v2/rustici-software-cloud-v2-model/String} opts.filterBy Optional enum parameter for specifying the field on which to run the filter.  (default to dispatch_id)
      * @param {module:rustici-software-cloud-v2/rustici-software-cloud-v2-model/String} opts.orderBy Optional enum parameter for specifying the field and order by which to sort the results.  (default to updated_asc)
      * @param {String} opts.more Pagination token returned as `more` property of multi page list requests
+     * @param {Boolean} opts.includeTotalCount Include the total count of results matching the provided filters as a header on the initial request.  The header will not be present on subsequent requests resulting from passing the `more` token.  (default to false)
      * @param {module:rustici-software-cloud-v2/rustici-software-cloud-v2-api/DispatchApi~getDispatchesCallback} callback The callback function, accepting three arguments: error, data, response
      * data is of type: {@link module:rustici-software-cloud-v2/rustici-software-cloud-v2-model/DispatchListSchema}
      */
@@ -1265,6 +1269,7 @@
         'filterBy': opts['filterBy'],
         'orderBy': opts['orderBy'],
         'more': opts['more'],
+        'includeTotalCount': opts['includeTotalCount'],
       };
       var collectionQueryParams = {
         'tags': {
@@ -1434,7 +1439,7 @@
       var formParams = {
       };
 
-      var authNames = ['UNSECURED'];
+      var authNames = [];
       var contentTypes = ['application/json'];
       var accepts = ['application/json'];
       var returnType = null;
