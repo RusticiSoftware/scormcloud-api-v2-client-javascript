@@ -55,8 +55,6 @@
       obj = obj || new exports();
       if (data.hasOwnProperty('destinations'))
         obj.destinations = ApiClient.convertToType(data['destinations'], [DestinationIdSchema]);
-      if (data.hasOwnProperty('more'))
-        obj.more = ApiClient.convertToType(data['more'], 'String');
     }
     return obj;
   }
@@ -66,12 +64,6 @@
    * @member {Array.<module:rustici-software-cloud-v2/rustici-software-cloud-v2-model/DestinationIdSchema>} destinations
    */
   exports.prototype.destinations = undefined;
-
-  /**
-   * Token for getting the next set of results, from the prior set of results.
-   * @member {String} more
-   */
-  exports.prototype.more = undefined;
 
 
   return exports;

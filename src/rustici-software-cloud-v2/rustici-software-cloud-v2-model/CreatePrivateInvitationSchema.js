@@ -71,6 +71,8 @@
         obj.expirationDate = ApiClient.convertToType(data['expirationDate'], 'Date');
       if (data.hasOwnProperty('tags'))
         obj.tags = ApiClient.convertToType(data['tags'], ['String']);
+      if (data.hasOwnProperty('duplicateRegistrationOption'))
+        obj.duplicateRegistrationOption = ApiClient.convertToType(data['duplicateRegistrationOption'], 'String');
     }
     return obj;
   }
@@ -110,6 +112,45 @@
    */
   exports.prototype.tags = undefined;
 
+  /**
+   * Represents the possible values that determine how existing registrations will be handled when an invitation is sent to an email address that has already received an invitation:   - `FAIL`: Do not create a new invitation, do not send an email, and do nothing with registrations   - `INSTANCE_EXISTING`: Create a new instance of the existing registration and send it with the invitation   - `SEND_EXISTING`: Re-send the existing registration with the new invitation   - `CREATE_NEW`: Create a new registration for the invitation 
+   * @member {module:rustici-software-cloud-v2/rustici-software-cloud-v2-model/CreatePrivateInvitationSchema.DuplicateRegistrationOptionEnum} duplicateRegistrationOption
+   * @default 'SEND_EXISTING'
+   */
+  exports.prototype.duplicateRegistrationOption = 'SEND_EXISTING';
+
+
+
+  /**
+   * Allowed values for the <code>duplicateRegistrationOption</code> property.
+   * @enum {String}
+   * @readonly
+   */
+  exports.DuplicateRegistrationOptionEnum = {
+    /**
+     * value: "FAIL"
+     * @const
+     */
+    FAIL: "FAIL",
+
+    /**
+     * value: "INSTANCE_EXISTING"
+     * @const
+     */
+    INSTANCE_EXISTING: "INSTANCE_EXISTING",
+
+    /**
+     * value: "SEND_EXISTING"
+     * @const
+     */
+    SEND_EXISTING: "SEND_EXISTING",
+
+    /**
+     * value: "CREATE_NEW"
+     * @const
+     */
+    CREATE_NEW: "CREATE_NEW"
+  };
 
   return exports;
 

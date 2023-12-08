@@ -16,18 +16,18 @@
 (function(root, factory) {
   if (typeof define === 'function' && define.amd) {
     // AMD. Register as an anonymous module.
-    define(['rustici-software-cloud-v2/ApiClient', 'rustici-software-cloud-v2/rustici-software-cloud-v2-model/BatchTagsSchema', 'rustici-software-cloud-v2/rustici-software-cloud-v2-model/CreateDispatchListSchema', 'rustici-software-cloud-v2/rustici-software-cloud-v2-model/DestinationListSchema', 'rustici-software-cloud-v2/rustici-software-cloud-v2-model/DestinationSchema', 'rustici-software-cloud-v2/rustici-software-cloud-v2-model/DispatchListSchema', 'rustici-software-cloud-v2/rustici-software-cloud-v2-model/DispatchLti13InfoSchema', 'rustici-software-cloud-v2/rustici-software-cloud-v2-model/DispatchLtiInfoSchema', 'rustici-software-cloud-v2/rustici-software-cloud-v2-model/DispatchRegistrationCountSchema', 'rustici-software-cloud-v2/rustici-software-cloud-v2-model/DispatchSchema', 'rustici-software-cloud-v2/rustici-software-cloud-v2-model/EnabledSchema', 'rustici-software-cloud-v2/rustici-software-cloud-v2-model/IntegerResultSchema', 'rustici-software-cloud-v2/rustici-software-cloud-v2-model/Lti13ToolConfigurationSchema', 'rustici-software-cloud-v2/rustici-software-cloud-v2-model/MessageSchema', 'rustici-software-cloud-v2/rustici-software-cloud-v2-model/TagListSchema', 'rustici-software-cloud-v2/rustici-software-cloud-v2-model/UpdateDispatchSchema'], factory);
+    define(['rustici-software-cloud-v2/ApiClient', 'rustici-software-cloud-v2/rustici-software-cloud-v2-model/BatchTagsSchema', 'rustici-software-cloud-v2/rustici-software-cloud-v2-model/CreateDispatchListSchema', 'rustici-software-cloud-v2/rustici-software-cloud-v2-model/DestinationInfoListSchema', 'rustici-software-cloud-v2/rustici-software-cloud-v2-model/DestinationInfoSchema', 'rustici-software-cloud-v2/rustici-software-cloud-v2-model/DestinationListSchema', 'rustici-software-cloud-v2/rustici-software-cloud-v2-model/DestinationSchema', 'rustici-software-cloud-v2/rustici-software-cloud-v2-model/DispatchListSchema', 'rustici-software-cloud-v2/rustici-software-cloud-v2-model/DispatchLti13InfoSchema', 'rustici-software-cloud-v2/rustici-software-cloud-v2-model/DispatchLtiInfoSchema', 'rustici-software-cloud-v2/rustici-software-cloud-v2-model/DispatchRegistrationCountSchema', 'rustici-software-cloud-v2/rustici-software-cloud-v2-model/DispatchSchema', 'rustici-software-cloud-v2/rustici-software-cloud-v2-model/EnabledSchema', 'rustici-software-cloud-v2/rustici-software-cloud-v2-model/IntegerResultSchema', 'rustici-software-cloud-v2/rustici-software-cloud-v2-model/Lti13ToolConfigurationSchema', 'rustici-software-cloud-v2/rustici-software-cloud-v2-model/MessageSchema', 'rustici-software-cloud-v2/rustici-software-cloud-v2-model/TagListSchema', 'rustici-software-cloud-v2/rustici-software-cloud-v2-model/UpdateDispatchSchema'], factory);
   } else if (typeof module === 'object' && module.exports) {
     // CommonJS-like environments that support module.exports, like Node.
-    module.exports = factory(require('../ApiClient'), require('../rustici-software-cloud-v2-model/BatchTagsSchema'), require('../rustici-software-cloud-v2-model/CreateDispatchListSchema'), require('../rustici-software-cloud-v2-model/DestinationListSchema'), require('../rustici-software-cloud-v2-model/DestinationSchema'), require('../rustici-software-cloud-v2-model/DispatchListSchema'), require('../rustici-software-cloud-v2-model/DispatchLti13InfoSchema'), require('../rustici-software-cloud-v2-model/DispatchLtiInfoSchema'), require('../rustici-software-cloud-v2-model/DispatchRegistrationCountSchema'), require('../rustici-software-cloud-v2-model/DispatchSchema'), require('../rustici-software-cloud-v2-model/EnabledSchema'), require('../rustici-software-cloud-v2-model/IntegerResultSchema'), require('../rustici-software-cloud-v2-model/Lti13ToolConfigurationSchema'), require('../rustici-software-cloud-v2-model/MessageSchema'), require('../rustici-software-cloud-v2-model/TagListSchema'), require('../rustici-software-cloud-v2-model/UpdateDispatchSchema'));
+    module.exports = factory(require('../ApiClient'), require('../rustici-software-cloud-v2-model/BatchTagsSchema'), require('../rustici-software-cloud-v2-model/CreateDispatchListSchema'), require('../rustici-software-cloud-v2-model/DestinationInfoListSchema'), require('../rustici-software-cloud-v2-model/DestinationInfoSchema'), require('../rustici-software-cloud-v2-model/DestinationListSchema'), require('../rustici-software-cloud-v2-model/DestinationSchema'), require('../rustici-software-cloud-v2-model/DispatchListSchema'), require('../rustici-software-cloud-v2-model/DispatchLti13InfoSchema'), require('../rustici-software-cloud-v2-model/DispatchLtiInfoSchema'), require('../rustici-software-cloud-v2-model/DispatchRegistrationCountSchema'), require('../rustici-software-cloud-v2-model/DispatchSchema'), require('../rustici-software-cloud-v2-model/EnabledSchema'), require('../rustici-software-cloud-v2-model/IntegerResultSchema'), require('../rustici-software-cloud-v2-model/Lti13ToolConfigurationSchema'), require('../rustici-software-cloud-v2-model/MessageSchema'), require('../rustici-software-cloud-v2-model/TagListSchema'), require('../rustici-software-cloud-v2-model/UpdateDispatchSchema'));
   } else {
     // Browser globals (root is window)
     if (!root.RusticiSoftwareCloudV2) {
       root.RusticiSoftwareCloudV2 = {};
     }
-    root.RusticiSoftwareCloudV2.DispatchApi = factory(root.RusticiSoftwareCloudV2.ApiClient, root.RusticiSoftwareCloudV2.BatchTagsSchema, root.RusticiSoftwareCloudV2.CreateDispatchListSchema, root.RusticiSoftwareCloudV2.DestinationListSchema, root.RusticiSoftwareCloudV2.DestinationSchema, root.RusticiSoftwareCloudV2.DispatchListSchema, root.RusticiSoftwareCloudV2.DispatchLti13InfoSchema, root.RusticiSoftwareCloudV2.DispatchLtiInfoSchema, root.RusticiSoftwareCloudV2.DispatchRegistrationCountSchema, root.RusticiSoftwareCloudV2.DispatchSchema, root.RusticiSoftwareCloudV2.EnabledSchema, root.RusticiSoftwareCloudV2.IntegerResultSchema, root.RusticiSoftwareCloudV2.Lti13ToolConfigurationSchema, root.RusticiSoftwareCloudV2.MessageSchema, root.RusticiSoftwareCloudV2.TagListSchema, root.RusticiSoftwareCloudV2.UpdateDispatchSchema);
+    root.RusticiSoftwareCloudV2.DispatchApi = factory(root.RusticiSoftwareCloudV2.ApiClient, root.RusticiSoftwareCloudV2.BatchTagsSchema, root.RusticiSoftwareCloudV2.CreateDispatchListSchema, root.RusticiSoftwareCloudV2.DestinationInfoListSchema, root.RusticiSoftwareCloudV2.DestinationInfoSchema, root.RusticiSoftwareCloudV2.DestinationListSchema, root.RusticiSoftwareCloudV2.DestinationSchema, root.RusticiSoftwareCloudV2.DispatchListSchema, root.RusticiSoftwareCloudV2.DispatchLti13InfoSchema, root.RusticiSoftwareCloudV2.DispatchLtiInfoSchema, root.RusticiSoftwareCloudV2.DispatchRegistrationCountSchema, root.RusticiSoftwareCloudV2.DispatchSchema, root.RusticiSoftwareCloudV2.EnabledSchema, root.RusticiSoftwareCloudV2.IntegerResultSchema, root.RusticiSoftwareCloudV2.Lti13ToolConfigurationSchema, root.RusticiSoftwareCloudV2.MessageSchema, root.RusticiSoftwareCloudV2.TagListSchema, root.RusticiSoftwareCloudV2.UpdateDispatchSchema);
   }
-}(this, function(ApiClient, BatchTagsSchema, CreateDispatchListSchema, DestinationListSchema, DestinationSchema, DispatchListSchema, DispatchLti13InfoSchema, DispatchLtiInfoSchema, DispatchRegistrationCountSchema, DispatchSchema, EnabledSchema, IntegerResultSchema, Lti13ToolConfigurationSchema, MessageSchema, TagListSchema, UpdateDispatchSchema) {
+}(this, function(ApiClient, BatchTagsSchema, CreateDispatchListSchema, DestinationInfoListSchema, DestinationInfoSchema, DestinationListSchema, DestinationSchema, DispatchListSchema, DispatchLti13InfoSchema, DispatchLtiInfoSchema, DispatchRegistrationCountSchema, DispatchSchema, EnabledSchema, IntegerResultSchema, Lti13ToolConfigurationSchema, MessageSchema, TagListSchema, UpdateDispatchSchema) {
   'use strict';
 
   /**
@@ -548,7 +548,7 @@
      * Callback function to receive the result of the getDestination operation.
      * @callback module:rustici-software-cloud-v2/rustici-software-cloud-v2-api/DispatchApi~getDestinationCallback
      * @param {String} error Error message, if any.
-     * @param {module:rustici-software-cloud-v2/rustici-software-cloud-v2-model/DestinationSchema} data The data returned by the service call.
+     * @param {module:rustici-software-cloud-v2/rustici-software-cloud-v2-model/DestinationInfoSchema} data The data returned by the service call.
      * @param {String} response The complete HTTP response.
      */
 
@@ -556,10 +556,13 @@
      * Get detailed information about a Destination 
      * Returns detailed information about the destination.  This includes name, tags, and launchAuth information. 
      * @param {String} destinationId Identifier for the destination
+     * @param {Object} opts Optional parameters
+     * @param {Boolean} opts.includeDispatchCount Include a count of dispatches for the destination. (default to false)
      * @param {module:rustici-software-cloud-v2/rustici-software-cloud-v2-api/DispatchApi~getDestinationCallback} callback The callback function, accepting three arguments: error, data, response
-     * data is of type: {@link module:rustici-software-cloud-v2/rustici-software-cloud-v2-model/DestinationSchema}
+     * data is of type: {@link module:rustici-software-cloud-v2/rustici-software-cloud-v2-model/DestinationInfoSchema}
      */
-    this.getDestination = function(destinationId, callback) {
+    this.getDestination = function(destinationId, opts, callback) {
+      opts = opts || {};
       var postBody = null;
 
       // verify the required parameter 'destinationId' is set
@@ -572,6 +575,7 @@
         'destinationId': destinationId
       };
       var queryParams = {
+        'includeDispatchCount': opts['includeDispatchCount'],
       };
       var collectionQueryParams = {
       };
@@ -583,7 +587,7 @@
       var authNames = ['APP_NORMAL', 'OAUTH'];
       var contentTypes = ['application/json'];
       var accepts = ['application/json'];
-      var returnType = DestinationSchema;
+      var returnType = DestinationInfoSchema;
 
       return this.apiClient.callApi(
         '/dispatch/destinations/{destinationId}', 'GET',
@@ -872,13 +876,13 @@
      * Callback function to receive the result of the getDestinations operation.
      * @callback module:rustici-software-cloud-v2/rustici-software-cloud-v2-api/DispatchApi~getDestinationsCallback
      * @param {String} error Error message, if any.
-     * @param {module:rustici-software-cloud-v2/rustici-software-cloud-v2-model/DestinationListSchema} data The data returned by the service call.
+     * @param {module:rustici-software-cloud-v2/rustici-software-cloud-v2-model/DestinationInfoListSchema} data The data returned by the service call.
      * @param {String} response The complete HTTP response.
      */
 
     /**
      * Get a list of Destinations 
-     * Returns a list of destinations.  Can be filtered using the request parameters to provide a subset of results.  >**Note:** >This request is paginated and will only provide a limited amount of resources at a time.  If there are more results to be collected, a `more` token provided with the response which can be passed to get the next page of results.  When passing this token, no other filter parameters can be sent as part of the request.  The resources will continue to respect the filters passed in by the original request. 
+     * Returns a list of destinations.  Can be filtered using the request parameters to provide a subset of results.  >**Note:** >This request is paginated and will only provide a limited amount of resources at a time.  If there are more results to be collected, a `more` token provided with the response which can be passed to get the next page of results.  When passing this token, no other filter parameters can be sent as part of the request.  The resources will continue to respect the filters passed in by the original request.  >**Info:** >This endpoint caches the dispatch count of a destination for 24 hours if the `includeDispatchCount` parameter is set to `true`.  Since this value is cached for an extended period, any changes made to the number of dispatches for a destination will not be reflected in the results of this endpoint until the caching period has passed.  >If you want to get an up-to-date value of the dispatch count for a single destination within the caching period, use the GetDestination endpoint with `includeDispatchCount` set to `true`.  GetDestination *always* gathers the most up-to-date values and overwrites them in the cache, resetting the caching period for that destination. 
      * @param {Object} opts Optional parameters
      * @param {String} opts.courseId Only retrieve resources having `courseId`
      * @param {Date} opts.since Filter by ISO 8601 TimeStamp inclusive (defaults to UTC)
@@ -889,9 +893,10 @@
      * @param {module:rustici-software-cloud-v2/rustici-software-cloud-v2-model/String} opts.filterBy Optional enum parameter for specifying the field on which to run the filter.  (default to destination_id)
      * @param {module:rustici-software-cloud-v2/rustici-software-cloud-v2-model/String} opts.orderBy Optional enum parameter for specifying the field and order by which to sort the results.  (default to updated_asc)
      * @param {String} opts.more Pagination token returned as `more` property of multi page list requests
+     * @param {Boolean} opts.includeDispatchCount Include a count of dispatches for each destination. (default to false)
      * @param {Boolean} opts.includeTotalCount Include the total count of results matching the provided filters as a header on the initial request.  The header will not be present on subsequent requests resulting from passing the `more` token.  (default to false)
      * @param {module:rustici-software-cloud-v2/rustici-software-cloud-v2-api/DispatchApi~getDestinationsCallback} callback The callback function, accepting three arguments: error, data, response
-     * data is of type: {@link module:rustici-software-cloud-v2/rustici-software-cloud-v2-model/DestinationListSchema}
+     * data is of type: {@link module:rustici-software-cloud-v2/rustici-software-cloud-v2-model/DestinationInfoListSchema}
      */
     this.getDestinations = function(opts, callback) {
       opts = opts || {};
@@ -909,6 +914,7 @@
         'filterBy': opts['filterBy'],
         'orderBy': opts['orderBy'],
         'more': opts['more'],
+        'includeDispatchCount': opts['includeDispatchCount'],
         'includeTotalCount': opts['includeTotalCount'],
       };
       var collectionQueryParams = {
@@ -925,7 +931,7 @@
       var authNames = ['APP_NORMAL', 'OAUTH'];
       var contentTypes = ['application/json'];
       var accepts = ['application/json'];
-      var returnType = DestinationListSchema;
+      var returnType = DestinationInfoListSchema;
 
       return this.apiClient.callApi(
         '/dispatch/destinations', 'GET',
