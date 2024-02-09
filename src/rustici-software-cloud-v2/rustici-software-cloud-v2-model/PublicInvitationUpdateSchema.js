@@ -68,13 +68,13 @@
   }
 
   /**
-   * If true, then new registrations can be created for this invitation.
+   * Determines if learners are allowed to launch the invitation. If false, the invitation is disabled and no new or existing learners are allowed to launch it. 
    * @member {Boolean} allowLaunch
    */
   exports.prototype.allowLaunch = undefined;
 
   /**
-   * If true, then new registrations can be created for this invitation.
+   * Determines if new registrations can be created for this public invitation. If false, no new registrations can be created for the invitation, so only learners with existing registrations can access the invitation. 
    * @member {Boolean} allowNewRegistrations
    */
   exports.prototype.allowNewRegistrations = undefined;
@@ -92,7 +92,7 @@
   exports.prototype.expirationDate = undefined;
 
   /**
-   * Integer value that limits the amount of registrations a public invitation can generate.
+   * Integer value that represents the maximum number of registrations that can be created for a public invitation. Setting this value to '0' allows an unlimited amount of registrations to be created for the invitation. 
    * @member {Number} registrationCap
    * @default 0
    */

@@ -88,7 +88,7 @@
   exports.prototype.courseId = undefined;
 
   /**
-   * If true, then new registrations can be created for this invitation.
+   * Determines if learners are allowed to launch the invitation. If false, the invitation is disabled and no new or existing learners are allowed to launch it. 
    * @member {Boolean} allowLaunch
    */
   exports.prototype.allowLaunch = undefined;

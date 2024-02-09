@@ -73,11 +73,14 @@
         obj.exitTime = ApiClient.convertToType(data['exitTime'], 'Date');
       if (data.hasOwnProperty('lastRuntimeUpdate'))
         obj.lastRuntimeUpdate = ApiClient.convertToType(data['lastRuntimeUpdate'], 'Date');
+      if (data.hasOwnProperty('launchHistoryId'))
+        obj.launchHistoryId = ApiClient.convertToType(data['launchHistoryId'], 'String');
     }
     return obj;
   }
 
   /**
+   * Identifier for the registration associated with this record
    * @member {String} id
    */
   exports.prototype.id = undefined;
@@ -131,6 +134,12 @@
    * @member {Date} lastRuntimeUpdate
    */
   exports.prototype.lastRuntimeUpdate = undefined;
+
+  /**
+   * A unique identifier for this launch history record
+   * @member {String} launchHistoryId
+   */
+  exports.prototype.launchHistoryId = undefined;
 
 
 

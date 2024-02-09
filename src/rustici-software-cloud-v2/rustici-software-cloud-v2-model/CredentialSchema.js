@@ -63,6 +63,10 @@
         obj.pensCredential = ApiClient.convertToType(data['pensCredential'], 'String');
       if (data.hasOwnProperty('status'))
         obj.status = ApiClient.convertToType(data['status'], 'String');
+      if (data.hasOwnProperty('created'))
+        obj.created = ApiClient.convertToType(data['created'], 'Date');
+      if (data.hasOwnProperty('updated'))
+        obj.updated = ApiClient.convertToType(data['updated'], 'Date');
     }
     return obj;
   }
@@ -95,6 +99,18 @@
    * @member {String} status
    */
   exports.prototype.status = undefined;
+
+  /**
+   * The time the API credential was created in UTC
+   * @member {Date} created
+   */
+  exports.prototype.created = undefined;
+
+  /**
+   * The time the API credential was last updated in UTC
+   * @member {Date} updated
+   */
+  exports.prototype.updated = undefined;
 
 
   return exports;
